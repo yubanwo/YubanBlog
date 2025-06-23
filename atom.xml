@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>渝伴的小窝</title>
+  
+  
+  <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
+  
+  <link href="https://blog.osyb.cn/"/>
+  <updated>2025-06-23T05:36:36.980Z</updated>
+  <id>https://blog.osyb.cn/</id>
+  
+  <author>
+    <name>Yuban</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>postmarketOS 常用命令</title>
+    <link href="https://blog.osyb.cn/posts/wz-3/"/>
+    <id>https://blog.osyb.cn/posts/wz-3/</id>
+    <published>2025-06-22T14:06:27.246Z</published>
+    <updated>2025-06-23T05:36:36.980Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、图形用户界面"><a href="#一、图形用户界面" class="headerlink" title="一、图形用户界面"></a>一、图形用户界面</h2><h3 id="关闭图形用户界面"><a href="#关闭图形用户界面" class="headerlink" title="关闭图形用户界面"></a>关闭图形用户界面</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rc-update del tinydm</span><br></pre></td></tr></table></figure><h3 id="开启图形用户界面"><a href="#开启图形用户界面" class="headerlink" title="开启图形用户界面"></a>开启图形用户界面</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rc-update add tinydm default</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一、图形用户界面&quot;&gt;&lt;a href=&quot;#一、图形用户界面&quot; class=&quot;headerlink&quot; title=&quot;一、图形用户界面&quot;&gt;&lt;/a&gt;一、图形用户界面&lt;/h2&gt;&lt;h3 id=&quot;关闭图形用户界面&quot;&gt;&lt;a href=&quot;#关闭图形用户界面&quot; class=&quot;head</summary>
+      
+    
+    
+    
+    <category term="记录" scheme="https://blog.osyb.cn/categories/%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="postmarketOS" scheme="https://blog.osyb.cn/tags/postmarketOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Qexo 使用 DogeCloud 云存储作为图床</title>
+    <link href="https://blog.osyb.cn/posts/wz-2/"/>
+    <id>https://blog.osyb.cn/posts/wz-2/</id>
+    <published>2025-06-17T14:35:09.414Z</published>
+    <updated>2025-06-23T05:38:40.168Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、创建储存空间"><a href="#一、创建储存空间" class="headerlink" title="一、创建储存空间"></a>一、创建储存空间</h2><p>在 <a href="https://console.dogecloud.com/oss/list">DogeCloud</a> 创建一个储存空间，选择标准型（基础型不支持使用 SDK 和 API 上传&#x2F;管理文件）<br><img src="https://cdn.osyb.cn/img/2025/06/c65dc3cf49b57c95059f4f013a674d7f.png/blog"></p><h2 id="二、获取储存空间的-SDK-参数"><a href="#二、获取储存空间的-SDK-参数" class="headerlink" title="二、获取储存空间的 SDK 参数"></a>二、获取储存空间的 SDK 参数</h2><p>打开刚刚创建的储存空间，点击 <code>SDK 参数</code> ，这里我们需要 <code>s3Bucket</code> 和 <code>s3Endpoint</code></p><p><img src="https://cdn.osyb.cn/img/2025/06/072834c906e0001127e83b700dbc7c69.png/blog"></p><h2 id="三、获取密钥信息"><a href="#三、获取密钥信息" class="headerlink" title="三、获取密钥信息"></a>三、获取密钥信息</h2><p>点击 <code>右上角</code>-<code>用户中心</code>-<code>密钥管理</code>，然后根据提示获取密钥（AccessKey &#x2F; SecretKey）</p><p><img src="https://cdn.osyb.cn/img/2025/06/d00003112cb09eae818db37c7df09819.png/blog"></p><p><img src="https://cdn.osyb.cn/img/2025/06/4504c39db8dd895b740cce3c8090744a.png/blog"></p><h2 id="四、配置Qexo"><a href="#四、配置Qexo" class="headerlink" title="四、配置Qexo"></a>四、配置Qexo</h2><p>为了方便演示使用测试数据：<br>AccessKey：3aea5a07hkk6dd167<br>Secretkey：a8ed57e46376ldfhakfte442a21604<br>s3Bucket：s-gz-6666-yuban-xxx-123456789<br>s3Endpoint：<a href="https://cos.ap-xxx.myqcloud.com/">https://cos.ap-xxx.myqcloud.com</a></p><p>在Qexo的设置里，找到图床配置：<br>图床类型：<code>DogeCloud云存储</code><br>DogeCloud_Accesskey：<code>3aea5a07hkk6dd167</code><br>DogeCloud_Secretkey：<code>a8ed57e46376ldfhakfte442a21604</code><br>储存桶名：<code>上传图片的一级目录</code><br>边缘节点：<code>https://s-xx-6666-yuban-xxx-123456789.cos.ap-xxx.myqcloud.com</code><br>保存路径：<a href="https://www.oplog.cn/qexo/configs/upload.html#%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84">官方文档</a><br>自定义域名：<code>https://储存空间域名/储存桶名/保存路径</code></p><blockquote><p>按道理说储存桶名填 s3Bucket，边缘节点填 s3Endpoint，但是我这样弄了上传图片会报错</p></blockquote><p><img src="https://cdn.osyb.cn/img/2025/06/466d42b66865812f969dbc54d2561bd9.png/blog"></p><h2 id="五、测试"><a href="#五、测试" class="headerlink" title="五、测试"></a>五、测试</h2><p>在Qexo里面上传一张图片测试，可以看到我的图片链接是：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.osyb.cn/img/2025/06/07142d4073fb43a5ad9943e3f9c27d25.png</span><br></pre></td></tr></table></figure><p><img src="https://cdn.osyb.cn/img/2025/06/02143b6dd88a361cf58fd042d22cd117.png/blog"></p><h2 id="六、最后"><a href="#六、最后" class="headerlink" title="六、最后"></a>六、最后</h2><p>我现在用的Qexo版本是 <code>3.6.0</code>，其他版本我没尝试过，不过参数就那么几个，多测试一下就好了</p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一、创建储存空间&quot;&gt;&lt;a href=&quot;#一、创建储存空间&quot; class=&quot;headerlink&quot; title=&quot;一、创建储存空间&quot;&gt;&lt;/a&gt;一、创建储存空间&lt;/h2&gt;&lt;p&gt;在 &lt;a href=&quot;https://console.dogecloud.com/oss/l</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="https://blog.osyb.cn/categories/Hexo/"/>
+    
+    
+    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
+    
+    <category term="Hexo" scheme="https://blog.osyb.cn/tags/Hexo/"/>
+    
+    <category term="Qexo" scheme="https://blog.osyb.cn/tags/Qexo/"/>
+    
+    <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 ja-netfilter 激活 JetBrains 2025 系产品</title>
+    <link href="https://blog.osyb.cn/posts/wz-1/"/>
+    <id>https://blog.osyb.cn/posts/wz-1/</id>
+    <published>2025-06-15T03:28:31.360Z</published>
+    <updated>2025-06-23T05:10:23.475Z</updated>
+    
+    <content type="html"><![CDATA[<p>随着信息化的飞速发展，开发者对高效智能的 IDE 及工具链的依赖日益加深。JetBrains 系列产品凭借卓越的代码分析能力和丰富的插件生态，早已成为程序员日常开发的得力助手。</p><p>然而，随着授权机制的不断升级，传统的激活方式逐渐失效。本文将详细记录如何使用 <strong>ja-netfilter</strong> 工具激活 JetBrains 2025 系列产品，方便后续查阅与复现，仅供学习与研究使用。</p><hr><h2 id="一、下载-ja-netfilter"><a href="#一、下载-ja-netfilter" class="headerlink" title="一、下载 ja-netfilter"></a>一、下载 ja-netfilter</h2><ol><li>打开 <a href="https://jetbra.in/s">jetbra.in&#x2F;s</a>，等待页面中的 <strong>IPFS Checker</strong> 检测完成。<br><img src="https://cdn.osyb.cn/img/2025/06/929df5d05709909ee725df6550756839.png/blog"></li><li>从检测结果中选择任意可用节点，点击进入下载页面。<br><img src="https://cdn.osyb.cn/img/2025/06/811c482c1b92ab8b7e24079f3f00b0d7.png/blog"></li><li>页面顶部找到 <code>jetbra.zip</code>，点击下载。</li></ol><hr><h2 id="二、安装-ja-netfilter"><a href="#二、安装-ja-netfilter" class="headerlink" title="二、安装 ja-netfilter"></a>二、安装 ja-netfilter</h2><ol><li><p>解压下载的 <code>jetbra.zip</code> 文件。</p></li><li><p>进入解压后的 <code>scripts</code> 目录。<br><img src="https://cdn.osyb.cn/img/2025/06/ea0986d0e11f8015956118446d330559.png/blog"></p></li><li><p>根据操作系统执行相应安装脚本：</p><ul><li><strong>Windows</strong>：双击运行 <code>install-all-users.vbs</code></li><li><strong>macOS &#x2F; Linux</strong>：终端执行 <code>install.sh</code></li></ul></li></ol><blockquote><p>💡 建议安装前先运行一次 <code>uninstall</code> 脚本，以避免旧版本残留导致冲突或配置错误。</p></blockquote><ol start="4"><li><p>安装过程中会弹出两个提示框：</p><ul><li>第一个弹窗点击「OK」</li><li>约 1~5 分钟后弹出第二个（内容为 “Dome”），点击「确定」</li></ul></li></ol><hr><h2 id="三、修改-ja-netfilter-配置"><a href="#三、修改-ja-netfilter-配置" class="headerlink" title="三、修改 ja-netfilter 配置"></a>三、修改 ja-netfilter 配置</h2><p>当前版本的 ja-netfilter 尚无法直接激活 JetBrains 2025 系产品，需进行如下配置（任选其一）：</p><h3 id="方式一：使用激活码激活"><a href="#方式一：使用激活码激活" class="headerlink" title="方式一：使用激活码激活"></a>方式一：使用激活码激活</h3><p>编辑 <code>config-jetbrains/url.conf</code> 文件，修改内容如下：</p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[URL]</span></span><br><span class="line">PREFIX,https://account.jetbrains.com/lservice/rpc/validateKey.action</span><br><span class="line">PREFIX,https://account.jetbrains.com.cn/lservice/rpc/validateKey.action</span><br></pre></td></tr></table></figure><h3 id="方式二：使用许可证服务器激活"><a href="#方式二：使用许可证服务器激活" class="headerlink" title="方式二：使用许可证服务器激活"></a>方式二：使用许可证服务器激活</h3><p>编辑 <code>config-jetbrains/power.conf</code> 文件，添加以下内容：</p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[Result]</span></span><br><span class="line">EQUAL,74536916935363972062676331234002795978371230636948551293621603151387012525605238437362717321374972744690556736705557452149497519412804345058881400041852152248781442398374098163466582715348121104283019915357094974189947691509248438017494612608877160854463801122408857053592284470003281993552170605889419992023038705192597311510734863341903647703840007318628804558346434827311733144529418566623714199565588181031770613580525237008189903834789078942762034416431160148672791037765767368214813401636365028031639884426126794115842679594980801784389705440469656481098442162146617906382071405164670982777208337204167914289682210535178020557113389359669265657696820776268705339574059938433729991223525911877835862344873763935678384081801004675023491836914378934761006350990456252681113253539880421773642536732092668061722476554573853994961057716516778138273777611940148330085010779542126866978669332562741093267867904170579076109624842072438223356166761104920950156877337904038406782440652886116687382019792158998260619254628867563400170565325011114569375987962380383313040551218643401540538478025122865871047085995035070082930349263334429199533531776938034249083427463322471533034172592961264436973331709502459982433402944574109570528373174,65537,860106576952879101192782278876319243486072481962999610484027161162448933268423045647258145695082284265933019120714643752088997312766689988016808929265129401027490891810902278465065056686129972085119605237470899952751915070244375173428976413406363879128531449407795115913715863867259163957682164040613505040314747660800424242248055421184038777878268502955477482203711835548014501087778959157112423823275878824729132393281517778742463067583320091009916141454657614089600126948087954465055321987012989937065785013284988096504657892738536613208311013047138019418152103262155848541574327484510025594166239784429845180875774012229784878903603491426732347994359380330103328705981064044872334790365894924494923595382470094461546336020961505275530597716457288511366082299255537762891238136381924520749228412559219346777184174219999640906007205260040707839706131662149325151230558316068068139406816080119906833578907759960298749494098180107991752250725928647349597506532778539709852254478061194098069801549845163358315116260915270480057699929968468068015735162890213859113563672040630687357054902747438421559817252127187138838514773245413540030800888215961904267348727206110582505606182944023582459006406137831940959195566364811905585377246353-&gt;31872219281407242025505148642475109331663948030010491344733687844358944945421064967310388547820970408352359213697487269225694990179009814674781374751323403257628081559561462351695605167675284372388551941279783515209238245831229026662363729380633136520288327292047232179909791526492877475417113579821717193807584807644097527647305469671333646868883650312280989663788656507661713409911267085806708237966730821529702498972114194166091819277582149433578383639532136271637219758962252614390071122773223025154710411681628917523557526099053858210363406122853294409830276270946292893988830514538950951686480580886602618927728470029090747400687617046511462665469446846624685614084264191213318074804549715573780408305977947238915527798680393538207482620648181504876534152430149355791756374642327623133843473947861771150672096834149014464956451480803326284417202116346454345929350148770746553056995922154382822307758515805142704373984019252210715650875853634697920708113806880196144197384637328982263167395073688501517286678083973976140696077590122053014085412828620051470085033364773099146103525313018873319293728800442101520384088109603555959893639842091339193916540786143451419950529324231092499266627290477930743308390718116223399064582</span><br><span class="line"></span><br><span class="line"><span class="section">[Result]</span></span><br><span class="line">EQUAL,112461441133519625377278033563377631217080810478044877913003583914648172091738157409921673196502504071932645557170019171979298595709352327802847769722044120499790085741936811108997304158745808767971516913718441191016834227872457230739137340571843164308934558717824577201912443223840644755180769504480393502755952629208233773261062450820065565988008725574313918475968373409242870402643190145552028259314958400337631849159185897138438439875424694124532866781262807038969447273824052492355210186488558693635452115878033675172769234889468457042725838181642541179089465010395802783763203718057315817018322305785075539591970216432243340366977824031569736525928733562828693571820672870610008956717834537299752992483571693698336452716670330967743846098030643538528204645931348565692824365943332663794928836727209414094750075716270817426458443599603160413128062421268628025660472739936815953924643652002565769233074966511472269518005528501545942584021818210587632705524697103775085784867648393186553267468729363798569623027883383917245256650355761359899139236166747130889213713310080522785602644742450625402390645549510027475808490196633734411293566393252889909125865355795314165239971352734320255879462427769889324003845415924485271874702773,65537,657823416415964932845156435107145357714205418747915356734397055242964933221752404166614935255105249101653916721681603662754307632457128805443068644284748929421507178622933348669378235847742899773920765918770105482851534467296284105250512573151705220224379509383835022323282176179690146311979451556541118129344282127375534752754929526193258755897888515754328964698687671896985405008425332766082319260988023654359845072776189451448786758245414253386146246727354454047135428416624852422567360097346671648093064429279847823280592246506886401865455491924420415707803245018138595108029359998829520236522620749918729938206134739331246902031807601266419258080411903201595710155467901291142142443220333539750397923736434950558371997170985472272249812750161962720036837656464089126216749585148030883029438285184930024286517865710539947589764564204842426698322404033441531662829238875205420761652375337327297032255730262635511533223504109798364923988127319356119135982652788834405038113746394301957551167740345788175766290794604666781402329824924118191746319728033878045396093674696713022814027690165596773992550010915823534552020920573926469894452526033833249442230929742486602298477270672101197444729222659891038350303699501280729658274069437-&gt;31872219281407242025505148642475109331663948030010491344733687844358944945421064967310388547820970408352359213697487269225694990179009814674781374751323403257628081559561462351695605167675284372388551941279783515209238245831229026662363729380633136520288327292047232179909791526492877475417113579821717193807584807644097527647305469671333646868883650312280989663788656507661713409911267085806708237966730821529702498972114194166091819277582149433578383639532136271637219758962252614390071122773223025154710411681628917523557526099053858210363406122853294409830276270946292893988830514538950951686480580886602618927728470029090747400687617046511462665469446846624685614084264191213318074804549715573780408305977947238915527798680393538207482620648181504876534152430149355791756374642327623133843473947861771150672096834149014464956451480803326284417202116346454345929350148770746553056995922154382822307758515805142704373984019252210715650875853634697920708113806880196144197384637328982263167395073688501517286678083973976140696077590122053014085412828620051470085033364773099146103525313018873319293728800442101520384088109603555959893639842091339193869176761112940712068557597508317971649031214973881730692211411295733498836914</span><br></pre></td></tr></table></figure><p>配置保存后，重启正在运行的 JetBrains IDE，ja-netfilter 将自动加载新配置。</p><hr><h2 id="四、激活-IDE"><a href="#四、激活-IDE" class="headerlink" title="四、激活 IDE"></a>四、激活 IDE</h2><h3 id="方式一：激活码激活"><a href="#方式一：激活码激活" class="headerlink" title="方式一：激活码激活"></a>方式一：激活码激活</h3><ol><li>打开 jetbra.zip 下载页，选择对应的 IDE</li><li>复制提供的激活码并在 IDE 中粘贴激活即可<br><img src="https://cdn.osyb.cn/img/2025/06/20e4a34be4e20f2b7ab301273c877930.png/blog"></li></ol><h3 id="方式二：许可证服务器激活"><a href="#方式二：许可证服务器激活" class="headerlink" title="方式二：许可证服务器激活"></a>方式二：许可证服务器激活</h3><p>在 IDE 激活窗口填写以下服务器地址：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://ls.justtonight.monster/</span><br></pre></td></tr></table></figure><p><img src="https://cdn.osyb.cn/img/2025/06/87a60ec3ad94aa34042adaf4d040e2cc.png/blog"></p><hr><h2 id="五、激活码无效？尝试以下操作"><a href="#五、激活码无效？尝试以下操作" class="headerlink" title="五、激活码无效？尝试以下操作"></a>五、激活码无效？尝试以下操作</h2><h3 id="Windows-用户"><a href="#Windows-用户" class="headerlink" title="Windows 用户"></a>Windows 用户</h3><ol><li>删除以下文件后重试：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">%APPDATA%\JetBrains\&lt;IDE+版本&gt;\&lt;IDE&gt;.key               ← 必删</span><br><span class="line">%APPDATA%\JetBrains\&lt;IDE+版本&gt;\plugin_PCWMP.license    ← 如存在</span><br></pre></td></tr></table></figure><ol start="2"><li>如仍失败，可删除以下目录（注意：将清空 IDE 设置）：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">%APPDATA%\JetBrains</span><br><span class="line">%LOCALAPPDATA%\JetBrains\</span><br></pre></td></tr></table></figure><h3 id="Linux-macOS-用户"><a href="#Linux-macOS-用户" class="headerlink" title="Linux &#x2F; macOS 用户"></a>Linux &#x2F; macOS 用户</h3><ol><li>删除以下目录：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~/.config/JetBrains/</span><br><span class="line">~/.cache/JetBrains/</span><br></pre></td></tr></table></figure><hr><h2 id="六、最后"><a href="#六、最后" class="headerlink" title="六、最后"></a>六、最后</h2><p>参考来源：<a href="https://blog.cxzlw.top/2024/10/22/jetbrains-202423/">创新者老王的博客</a><br>附件：修改后的 <a href="https://cdn.osyb.cn/tool/jetbra.zip">jetbra.zip</a></p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用。<br>建议有条件者通过 JetBrains 官方的 <a href="https://www.jetbrains.com/community/education/">学生授权</a> 或 <a href="https://www.jetbrains.com/pricing/">个人订阅计划</a> 获取正版许可。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;随着信息化的飞速发展，开发者对高效智能的 IDE 及工具链的依赖日益加深。JetBrains 系列产品凭借卓越的代码分析能力和丰富的插件生态，早已成为程序员日常开发的得力助手。&lt;/p&gt;
+&lt;p&gt;然而，随着授权机制的不断升级，传统的激活方式逐渐失效。本文将详细记录如何使用 &lt;s</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="JetBrains" scheme="https://blog.osyb.cn/tags/JetBrains/"/>
+    
+    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
+    
+  </entry>
+  
+</feed>
