@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-06-23T05:36:36.980Z</updated>
+  <updated>2025-06-26T10:56:54.743Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过USB共享网络的openwrt的使用不了ipv6</title>
+    <link href="https://blog.osyb.cn/posts/wz-4/"/>
+    <id>https://blog.osyb.cn/posts/wz-4/</id>
+    <published>2025-06-26T10:56:53.081Z</published>
+    <updated>2025-06-26T10:56:54.743Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>postmarketOS 常用命令</title>
