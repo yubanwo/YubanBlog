@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-06-27T09:38:10.577Z</updated>
+  <updated>2025-06-27T11:32:12.080Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>随身WiFi 通过 USB 接入路由器共享网络却不能访问 IPv6网站？这样设置就对了！</title>
+    <title>随身WiFi 通过 USB 接入路由器共享网络却不能访问 IPv6网站</title>
     <link href="https://blog.osyb.cn/posts/wz-4/"/>
     <id>https://blog.osyb.cn/posts/wz-4/</id>
     <published>2025-06-26T10:56:53.081Z</published>
-    <updated>2025-06-27T09:38:10.577Z</updated>
+    <updated>2025-06-27T11:32:12.080Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>使用随身 WiFi 通过 USB 接入路由器共享网络后，<code>wan6</code> 接口虽然成功获取了 IPv6 地址，但却无法访问 IPv6 网站。<br>如下图所示：</p><p><img src="https://cdn.osyb.cn/img/2025/06/218ed970f0b08846ff72db4c9d53e63b.png/blog" alt="wan6 获取到 IPv6 地址但无法访问"></p><hr><h2 id="设置方法"><a href="#设置方法" class="headerlink" title="设置方法"></a>设置方法</h2><p>进入 OpenWrt 管理后台，依次进行以下设置：</p><h3 id="1-关闭-IPv6-源路由"><a href="#1-关闭-IPv6-源路由" class="headerlink" title="1. 关闭 IPv6 源路由"></a>1. 关闭 IPv6 源路由</h3><ul><li>点击 <code>网络</code> → <code>接口</code> → <code>wan6</code> → <code>编辑</code> → <code>高级设置</code></li><li>取消勾选 <strong>IPv6 源路由</strong></li></ul><p><img src="https://cdn.osyb.cn/img/2025/06/25ec3ad221c5d032c351766a1e30296f.png/blog" alt="关闭 IPv6 源路由"></p><h3 id="2-启用-IPv6-伪装"><a href="#2-启用-IPv6-伪装" class="headerlink" title="2. 启用 IPv6 伪装"></a>2. 启用 IPv6 伪装</h3><ul><li>点击 <code>网络</code> → <code>防火墙</code> → <code>常规设置</code> → <code>区域</code> → <code>wan</code> → <code>编辑</code> → <code>高级设置</code></li><li>启用 <strong>IPv6 伪装</strong></li></ul><p><img src="https://cdn.osyb.cn/img/2025/06/226a5eeb84a0a70b19c1277b9a0a8c5d.png/blog" alt="启用 IPv6 伪装"></p><hr><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p><code>IPv6 伪装</code> 功能是从 OpenWrt 22.03 版本开始引入的。<br>完成上述设置后，即可正常访问 IPv6 网络。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>使用随身 WiFi 通过 USB 接入路由器共享网络后，<code>wan6</code> 接口虽然成功获取了 IPv6 地址，但却无法访问 IPv6 网站。<br>如下图所示：</p><p><img src="https://cdn.osyb.cn/img/2025/06/218ed970f0b08846ff72db4c9d53e63b.png/blog"></p><hr><h2 id="设置方法"><a href="#设置方法" class="headerlink" title="设置方法"></a>设置方法</h2><p>进入 OpenWrt 管理后台，依次进行以下设置：</p><h3 id="1-关闭-IPv6-源路由"><a href="#1-关闭-IPv6-源路由" class="headerlink" title="1. 关闭 IPv6 源路由"></a>1. 关闭 IPv6 源路由</h3><ul><li>点击 <code>网络</code> → <code>接口</code> → <code>wan6</code> → <code>编辑</code> → <code>高级设置</code></li><li>取消勾选 <strong>IPv6 源路由</strong></li></ul><p><img src="https://cdn.osyb.cn/img/2025/06/25ec3ad221c5d032c351766a1e30296f.png/blog"></p><h3 id="2-启用-IPv6-伪装"><a href="#2-启用-IPv6-伪装" class="headerlink" title="2. 启用 IPv6 伪装"></a>2. 启用 IPv6 伪装</h3><ul><li>点击 <code>网络</code> → <code>防火墙</code> → <code>常规设置</code> → <code>区域</code> → <code>wan</code> → <code>编辑</code> → <code>高级设置</code></li><li>启用 <strong>IPv6 伪装</strong></li></ul><p><img src="https://cdn.osyb.cn/img/2025/06/226a5eeb84a0a70b19c1277b9a0a8c5d.png/blog"></p><hr><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p><code>IPv6 伪装</code> 功能是从 OpenWrt 22.03 版本开始引入的。<br>完成上述设置后，即可正常访问 IPv6 网络。</p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用。</p></blockquote><hr>]]></content>
     
     
       
