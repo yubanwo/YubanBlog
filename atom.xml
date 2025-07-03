@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-06-27T11:33:31.923Z</updated>
+  <updated>2025-06-28T10:33:43.208Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小米 R3G 路由器刷 OpenWrt</title>
+    <link href="https://blog.osyb.cn/posts/wz-5/"/>
+    <id>https://blog.osyb.cn/posts/wz-5/</id>
+    <published>2025-06-28T10:33:42.070Z</published>
+    <updated>2025-06-28T10:33:43.208Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前几天买了一个华为的 5G 通信壳，为了方便使用特意买了个小米的 R3G 路由器（带USB3.0接口的）。</p><hr><h2 id="一、开启-SSH-权限"><a href="#一、开启-SSH-权限" class="headerlink" title="一、开启 SSH 权限"></a>一、开启 SSH 权限</h2><h3 id="1-更新最新稳定版固件"><a href="#1-更新最新稳定版固件" class="headerlink" title="1. 更新最新稳定版固件"></a>1. 更新最新稳定版固件</h3><ul><li>文件：<a href="https://bigota.miwifi.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_12f97_2.25.124.bin">miwifi_r3g_firmware_9be74_2.28.44.bin</a></li><li>版本：2.28.44</li></ul><h3 id="2-更新最新开发版版固件"><a href="#2-更新最新开发版版固件" class="headerlink" title="2. 更新最新开发版版固件"></a>2. 更新最新开发版版固件</h3><ul><li>文件：<a href="https://bigota.miwifi.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_12f97_2.25.124.bin">miwifi_r3g_firmware_12f97_2.25.124.bin</a></li><li>版本：2.25.124</li></ul><h3 id="3-绑定小米账号"><a href="#3-绑定小米账号" class="headerlink" title="3. 绑定小米账号"></a>3. 绑定小米账号</h3><p>下载<code>小米路由器 APP</code>登录</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;前几天买了一个华为的 5G 通信壳，为了方便使用特意买了个小米的 R3G 路由器（带USB3.0接口的）。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>随身WiFi 通过 USB 接入路由器共享网络却不能访问 IPv6网站</title>
