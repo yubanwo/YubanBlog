@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-07-02T22:52:36.823Z</updated>
+  <updated>2025-07-10T14:52:01.012Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>让 OpenWrt 支持USB网络共享</title>
+    <link href="https://blog.osyb.cn/posts/wz-6/"/>
+    <id>https://blog.osyb.cn/posts/wz-6/</id>
+    <published>2025-07-10T14:51:59.569Z</published>
+    <updated>2025-07-10T14:52:01.012Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、RNDIS模式（推荐）"><a href="#一、RNDIS模式（推荐）" class="headerlink" title="一、RNDIS模式（推荐）"></a>一、RNDIS模式（推荐）</h2><p>RNDIS（Remote Network Driver Interface Specification）是微软开发的网络设备通讯协议，兼容性极高，广泛支持 Windows、Linux、OpenWrt 等系统。</p><p><strong>优点：</strong></p><ul><li>支持广泛，尤其是 Windows 系统；</li><li>OpenWrt 路由器只需两个模块即可启用；</li><li>稳定性较好。</li></ul><p><strong>缺点：</strong></p><ul><li>在部分 Linux 系统中表现一般，吞吐率略低。</li></ul><h3 id="1-面板安装（以OpenWrt为例）"><a href="#1-面板安装（以OpenWrt为例）" class="headerlink" title="1. 面板安装（以OpenWrt为例）"></a>1. 面板安装（以OpenWrt为例）</h3><p>在OpenWrt系统的 Web 面板中，进入 <strong>系统 &gt; 软件包</strong>，搜索并安装以下模块：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kmod-usb-net</span><br><span class="line">kmod-usb-net-rndis</span><br></pre></td></tr></table></figure><h3 id="2-SSH安装"><a href="#2-SSH安装" class="headerlink" title="2. SSH安装"></a>2. SSH安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">opkg update</span><br><span class="line">opkg install kmod-usb-net kmod-usb-net-rndis</span><br></pre></td></tr></table></figure><hr><h2 id="二、CDC-ECM模式（适用于Linux）"><a href="#二、CDC-ECM模式（适用于Linux）" class="headerlink" title="二、CDC-ECM模式（适用于Linux）"></a>二、CDC-ECM模式（适用于Linux）</h2><p>CDC-ECM（Ethernet Control Model）是 USB 通信类中的一种标准协议，主要为以太网数据通信而设计。</p><p><strong>优点：</strong></p><ul><li>Linux 和 OpenWrt 默认原生支持，无需额外驱动；</li><li>协议规范、实现简洁；</li><li>稳定性好，适合嵌入式设备。</li></ul><p><strong>缺点：</strong></p><ul><li>不支持 Windows 系统（需要手动安装驱动或修改 INF 文件）；</li><li>吞吐率一般。</li></ul><h3 id="1-面板安装（OpenWrt）"><a href="#1-面板安装（OpenWrt）" class="headerlink" title="1. 面板安装（OpenWrt）"></a>1. 面板安装（OpenWrt）</h3><p>通常已集成支持，如未支持，可安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kmod-usb-net  </span><br><span class="line">kmod-usb-net-cdc-eem</span><br></pre></td></tr></table></figure><h3 id="2-SSH安装-1"><a href="#2-SSH安装-1" class="headerlink" title="2. SSH安装"></a>2. SSH安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">opkg update</span><br><span class="line">opkg install kmod-usb-net kmod-usb-net-cdc-eem</span><br></pre></td></tr></table></figure><hr><h2 id="三、CDC-NCM模式（高性能模式）"><a href="#三、CDC-NCM模式（高性能模式）" class="headerlink" title="三、CDC-NCM模式（高性能模式）"></a>三、CDC-NCM模式（高性能模式）</h2><p>CDC-NCM（Network Control Model）是 CDC-ECM 的增强版本，提供更高的数据吞吐能力，适合需要更高网络性能的应用场景，如 4G&#x2F;5G 上网卡等。</p><p><strong>优点：</strong></p><ul><li>吞吐率高、数据效率优；</li><li>在 Linux 和 OpenWrt 下支持良好；</li><li>适合高速网络连接设备。</li></ul><p><strong>缺点：</strong></p><ul><li>Windows 支持不佳；</li><li>相比 ECM 配置稍复杂；</li><li>部分设备兼容性较差。</li></ul><h3 id="1-面板安装（OpenWrt）-1"><a href="#1-面板安装（OpenWrt）-1" class="headerlink" title="1. 面板安装（OpenWrt）"></a>1. 面板安装（OpenWrt）</h3><p>安装以下模块：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kmod-usb-net  </span><br><span class="line">kmod-usb-net-cdc-ncm</span><br></pre></td></tr></table></figure><h3 id="2-SSH安装-2"><a href="#2-SSH安装-2" class="headerlink" title="2. SSH安装"></a>2. SSH安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">opkg update</span><br><span class="line">opkg install kmod-usb-net kmod-usb-net-cdc-ncm</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一、RNDIS模式（推荐）&quot;&gt;&lt;a href=&quot;#一、RNDIS模式（推荐）&quot; class=&quot;headerlink&quot; title=&quot;一、RNDIS模式（推荐）&quot;&gt;&lt;/a&gt;一、RNDIS模式（推荐）&lt;/h2&gt;&lt;p&gt;RNDIS（Remote Network Drive</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>小米 R3G 路由器刷 OpenWrt</title>
