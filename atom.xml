@@ -35,7 +35,11 @@
     
     
     
+    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
     <category term="OpenWrt" scheme="https://blog.osyb.cn/categories/OpenWrt/"/>
+    
+    <category term="5G 通信壳" scheme="https://blog.osyb.cn/categories/5G-%E9%80%9A%E4%BF%A1%E5%A3%B3/"/>
     
     
     <category term="OpenWrt" scheme="https://blog.osyb.cn/tags/OpenWrt/"/>

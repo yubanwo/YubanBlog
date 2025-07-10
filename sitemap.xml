@@ -182,4 +182,11 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://blog.osyb.cn/categories/5G-%E9%80%9A%E4%BF%A1%E5%A3%B3/</loc>
+    <lastmod>2025-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 </urlset>
