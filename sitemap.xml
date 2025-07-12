@@ -20,6 +20,15 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/posts/wz-6/</loc>
+    
+    <lastmod>2025-07-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/posts/wz-7/</loc>
     
     <lastmod>2025-07-11</lastmod>
@@ -30,15 +39,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/posts/wz-5/</loc>
-    
-    <lastmod>2025-07-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/posts/wz-6/</loc>
     
     <lastmod>2025-07-10</lastmod>
     
@@ -207,13 +207,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/categories/Linux/</loc>
-    <lastmod>2025-07-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/categories/5G-%E9%80%9A%E4%BF%A1%E5%A3%B3/</loc>
     <lastmod>2025-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
