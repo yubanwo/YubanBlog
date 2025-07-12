@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-07-10T16:51:14.006Z</updated>
+  <updated>2025-07-11T19:13:18.025Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Debian 创建一个纯 SFTP </title>
+    <link href="https://blog.osyb.cn/posts/wz-7/"/>
+    <id>https://blog.osyb.cn/posts/wz-7/</id>
+    <published>2025-07-11T19:06:49.942Z</published>
+    <updated>2025-07-11T19:13:18.025Z</updated>
+    
+    <content type="html"><![CDATA[<p>在某些场景下，我们希望给某些用户提供 <strong>SFTP 文件上传&#x2F;下载权限</strong>，而不允许他们使用 SSH 登录系统。本文将介绍如何在 <strong>Debian 系统</strong>上创建一个<strong>纯 SFTP 用户环境</strong>，只允许使用 SFTP，禁止 SSH shell 访问。</p><h2 id="一、前提条件"><a href="#一、前提条件" class="headerlink" title="一、前提条件"></a>一、前提条件</h2><ul><li>已安装并启用了 OpenSSH 服务。</li><li>拥有一台 Debian 服务器的 root 权限或 sudo 权限。</li></ul><h2 id="二、创建-SFTP-用户组和用户"><a href="#二、创建-SFTP-用户组和用户" class="headerlink" title="二、创建 SFTP 用户组和用户"></a>二、创建 SFTP 用户组和用户</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建 SFTP 用户组</span></span><br><span class="line"><span class="built_in">sudo</span> groupadd sftpusers</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个用户，仅允许使用 SFTP，禁用 shell</span></span><br><span class="line"><span class="built_in">sudo</span> useradd -m -d /home/sftpuser -s /usr/sbin/nologin -g sftpusers sftpuser</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置密码（用于 SFTP 登录）</span></span><br><span class="line"><span class="built_in">sudo</span> passwd sftpuser</span><br></pre></td></tr></table></figure><h2 id="三、配置用户目录权限"><a href="#三、配置用户目录权限" class="headerlink" title="三、配置用户目录权限"></a>三、配置用户目录权限</h2><p>OpenSSH 要求 SFTP 的根目录不能被用户写入，因此需要设置一个只读根目录，并在其下创建一个可写子目录：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置根目录权限（必须是 root 拥有）</span></span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chown</span> root:root /home/sftpuser</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 755 /home/sftpuser</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建上传目录并赋予用户权限</span></span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">mkdir</span> /home/sftpuser/uploads</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chown</span> sftpuser:sftpusers /home/sftpuser/uploads</span><br></pre></td></tr></table></figure><h2 id="四、配置-OpenSSH-的-SFTP-限制"><a href="#四、配置-OpenSSH-的-SFTP-限制" class="headerlink" title="四、配置 OpenSSH 的 SFTP 限制"></a>四、配置 OpenSSH 的 SFTP 限制</h2><p>编辑 SSH 配置文件：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure><p>在文件末尾添加以下内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Match Group sftpusers</span><br><span class="line">    ChrootDirectory %h</span><br><span class="line">    ForceCommand internal-sftp</span><br><span class="line">    X11Forwarding no</span><br><span class="line">    AllowTcpForwarding no</span><br></pre></td></tr></table></figure><p>说明：</p><ul><li><code>ChrootDirectory %h</code>：将用户限制在自己的主目录。</li><li><code>ForceCommand internal-sftp</code>：强制使用 SFTP。</li><li>禁用端口转发和 X11 转发以增强安全性。</li></ul><h2 id="五、重启-SSH-服务"><a href="#五、重启-SSH-服务" class="headerlink" title="五、重启 SSH 服务"></a>五、重启 SSH 服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl restart ssh</span><br></pre></td></tr></table></figure><h2 id="六、验证-SFTP-登录"><a href="#六、验证-SFTP-登录" class="headerlink" title="六、验证 SFTP 登录"></a>六、验证 SFTP 登录</h2><p>可以使用 <code>sftp</code> 命令或 FileZilla 等客户端登录测试：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sftp sftpuser@your-server-ip</span><br></pre></td></tr></table></figure><p>你应该能够访问 <code>/uploads</code> 目录进行上传操作，但无法访问 shell 或其他系统目录。</p><h2 id="七、安全建议"><a href="#七、安全建议" class="headerlink" title="七、安全建议"></a>七、安全建议</h2><ul><li>每个用户独立目录 <code>/home/用户名/uploads</code>。</li><li>建议结合 fail2ban 或防火墙防止暴力破解。</li><li>可进一步使用证书认证替代密码。</li></ul><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li>OpenSSH sshd_config 手册：man sshd_config</li><li>Debian Wiki: <a href="https://wiki.debian.org/SFTPOnly">https://wiki.debian.org/SFTPOnly</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在某些场景下，我们希望给某些用户提供 &lt;strong&gt;SFTP 文件上传&amp;#x2F;下载权限&lt;/strong&gt;，而不允许他们使用 SSH 登录系统。本文将介绍如何在 &lt;strong&gt;Debian 系统&lt;/strong&gt;上创建一个&lt;strong&gt;纯 SFTP 用户环境&lt;/st</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>让 OpenWrt 支持USB网络共享</title>
@@ -143,16 +163,16 @@
     
     
     
-    <category term="Hexo" scheme="https://blog.osyb.cn/categories/Hexo/"/>
-    
     <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
     
+    <category term="Hexo" scheme="https://blog.osyb.cn/categories/Hexo/"/>
+    
+    
+    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
     
     <category term="Hexo" scheme="https://blog.osyb.cn/tags/Hexo/"/>
     
     <category term="Qexo" scheme="https://blog.osyb.cn/tags/Qexo/"/>
-    
-    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
     
     <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
     
@@ -179,9 +199,9 @@
     <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
-    
     <category term="JetBrains" scheme="https://blog.osyb.cn/tags/JetBrains/"/>
+    
+    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
     
   </entry>
   
