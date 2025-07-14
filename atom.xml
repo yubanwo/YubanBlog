@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-07-14T07:29:09.729Z</updated>
+  <updated>2025-07-14T03:36:55.764Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -15,36 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Windows 浏览器提示未连接到互联网？可能是代理设置没关掉</title>
-    <link href="https://blog.osyb.cn/posts/wz-9/"/>
-    <id>https://blog.osyb.cn/posts/wz-9/</id>
-    <published>2025-07-14T07:08:22.588Z</published>
-    <updated>2025-07-14T07:29:09.729Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在使用网络加速器或机场服务（如 Clash、V2Ray、Trojan 等）之后，很多用户在<strong>重启电脑后首次打开浏览器时</strong>，会遇到以下提示：</p><blockquote><p><strong>“未连接到互联网，代理服务器出现问题，或者地址有误。”</strong></p></blockquote><p>这个问题多数情况下是因为<strong>系统代理设置没有恢复为默认状态</strong>，导致浏览器或其他程序仍然尝试通过已经关闭的代理服务器连接网络，最终连接失败。</p><p><img src="https://cdn.osyb.cn/img/2025/07/bec26f1992c236a32a7d06914dacb3a3.png/blog"></p><hr><h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><h3 id="浏览器错误提示（可能是以下几种）："><a href="#浏览器错误提示（可能是以下几种）：" class="headerlink" title="浏览器错误提示（可能是以下几种）："></a>浏览器错误提示（可能是以下几种）：</h3><ul><li>无法访问此网站</li><li>请检查您的互联网连接</li><li>代理服务器出现问题，或者地址有误</li><li>ERR_PROXY_CONNECTION_FAILED</li></ul><p>这些报错大多数都与系统中的<strong>HTTP&#x2F;HTTPS代理配置</strong>残留有关。</p><hr><h2 id="可能原因"><a href="#可能原因" class="headerlink" title="可能原因"></a>可能原因</h2><ol><li><strong>加速器未正常关闭代理设置</strong><br>一些加速器&#x2F;机场客户端关闭后不会自动清除或还原系统代理设置。</li><li><strong>开机启动项设置残留</strong><br>加速器设置了系统代理，但并未随系统启动，导致代理地址无效。</li><li><strong>断电或系统崩溃后配置未恢复</strong><br>突然关机或程序异常退出，系统代理配置未能被及时重置。</li></ol><hr><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="方法一：手动关闭系统代理"><a href="#方法一：手动关闭系统代理" class="headerlink" title="方法一：手动关闭系统代理"></a>方法一：手动关闭系统代理</h3><ol><li><p><strong>打开系统设置</strong><br>点击开始菜单 → 设置（Settings）</p></li><li><p><strong>进入网络设置</strong><br>依次点击：<br><code>网络和 Internet</code> → <code>代理</code></p></li><li><p><strong>关闭代理服务器</strong><br>在<strong>手动代理设置</strong>中，将“<strong>使用代理服务器</strong>”的开关关闭。</p><p><img src="https://cdn.osyb.cn/img/2025/07/6bb313c97705e5d4d07cf22610339095.png/blog"></p></li><li><p>关闭设置页面，重新打开浏览器测试是否恢复正常。</p></li></ol><hr><h3 id="方法二：使用命令行重置代理配置"><a href="#方法二：使用命令行重置代理配置" class="headerlink" title="方法二：使用命令行重置代理配置"></a>方法二：使用命令行重置代理配置</h3><p>如果你希望更快速地通过命令行解决，可以按下 <code>Win + R</code> 打开运行框，输入 <code>cmd</code>，以管理员身份运行命令提示符，执行以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></table></figure><p><img src="https://cdn.osyb.cn/img/2025/07/3dd6dfeb8f218a21f22c22c07a554188.png/blog"></p><p>此命令会重置 <code>WinHTTP</code> 代理配置（不是浏览器代理，但部分系统级别应用依赖）。</p><hr><h3 id="方法三：使用-PowerShell-清除代理设置"><a href="#方法三：使用-PowerShell-清除代理设置" class="headerlink" title="方法三：使用 PowerShell 清除代理设置"></a>方法三：使用 PowerShell 清除代理设置</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ItemProperty</span> <span class="literal">-Path</span> <span class="string">&#x27;HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings&#x27;</span> <span class="literal">-Name</span> ProxyEnable <span class="literal">-Value</span> <span class="number">0</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.osyb.cn/img/2025/07/2f089a6ead497b27a19067acea8f26ce.png/blog"></p><hr><h2 id="如何避免此问题再次发生？"><a href="#如何避免此问题再次发生？" class="headerlink" title="如何避免此问题再次发生？"></a>如何避免此问题再次发生？</h2><ol><li><strong>使用自带代理还原功能的加速器</strong><br>优先选择能自动恢复代理设置的客户端，例如 Clash for Windows、V2RayN 等的“退出时关闭代理”选项。</li><li><strong>不要直接结束进程</strong><br>避免在任务管理器中直接结束加速器进程，否则可能留下代理设置。</li><li><strong>定期检查代理设置</strong><br>特别是在网络连接异常时，第一时间检查 <code>设置 → 网络和 Internet → 代理</code>。</li><li><strong>设置启动脚本自动还原</strong>（进阶用户可选）<br>使用批处理脚本或 PowerShell 每次开机自动重置系统代理设置。</li></ol><hr><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>使用加速器的同时，注意代理配置的管理可以避免很多不必要的网络连接问题。如果你经常遇到这种问题，不妨将这篇文章收藏起来，作为应急解决方案参考。</p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用。</p></blockquote><hr>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在使用网络加速器或机场服务（如 Clash、V2Ray、Trojan 等）之后，很多用户在&lt;strong&gt;重启电脑后首次打开浏览器时&lt;/st</summary>
-      
-    
-    
-    
-    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="记录" scheme="https://blog.osyb.cn/categories/%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="Windows" scheme="https://blog.osyb.cn/categories/Windows/"/>
-    
-    
-    <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Windows" scheme="https://blog.osyb.cn/tags/Windows/"/>
-    
-  </entry>
   
   <entry>
     <title>Debian 中使用 Bind Mount 实现目录挂载</title>
