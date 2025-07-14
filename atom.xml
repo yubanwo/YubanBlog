@@ -175,16 +175,16 @@
     
     
     
-    <category term="Hexo" scheme="https://blog.osyb.cn/categories/Hexo/"/>
-    
     <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
     
+    <category term="Hexo" scheme="https://blog.osyb.cn/categories/Hexo/"/>
+    
+    
+    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
     
     <category term="Hexo" scheme="https://blog.osyb.cn/tags/Hexo/"/>
     
     <category term="Qexo" scheme="https://blog.osyb.cn/tags/Qexo/"/>
-    
-    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
     
     <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
     
@@ -211,9 +211,9 @@
     <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
-    
     <category term="JetBrains" scheme="https://blog.osyb.cn/tags/JetBrains/"/>
+    
+    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
     
   </entry>
   
