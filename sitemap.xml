@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.osyb.cn/posts/wz-4/</loc>
+    <loc>https://blog.osyb.cn/tags/</loc>
     
     <lastmod>2025-07-18</lastmod>
     
@@ -21,15 +21,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/categories/</loc>
-    
-    <lastmod>2025-07-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/tags/</loc>
     
     <lastmod>2025-07-18</lastmod>
     
@@ -122,6 +113,15 @@
     <loc>https://blog.osyb.cn/posts/wz-5/</loc>
     
     <lastmod>2025-07-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.osyb.cn/posts/wz-4/</loc>
+    
+    <lastmod>2025-07-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -241,27 +241,6 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/IPv6/</loc>
-    <lastmod>2025-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/tags/NAT6/</loc>
-    <lastmod>2025-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/tags/USB%E7%BD%91%E5%8D%A1/</loc>
-    <lastmod>2025-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.osyb.cn/tags/OpenWrt/</loc>
     <lastmod>2025-07-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -335,13 +314,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/categories/Windows/</loc>
-    <lastmod>2025-07-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/categories/OpenWrt/%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2025-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
