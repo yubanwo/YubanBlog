@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.osyb.cn/categories/</loc>
+    <loc>https://blog.osyb.cn/tags/</loc>
     
     <lastmod>2025-07-19</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/</loc>
+    <loc>https://blog.osyb.cn/categories/</loc>
     
     <lastmod>2025-07-19</lastmod>
     
