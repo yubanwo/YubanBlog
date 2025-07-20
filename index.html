@@ -60,7 +60,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-07-21 00:12:33',
+  postUpdate: '2025-07-21 00:16:51',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -232,25 +232,21 @@
         Windows
       </a>
     </div>
-    </div><div class="category-bar-next" id="category-bar-next" onclick="anzhiyu.scrollCategoryBarToRight()"><i class="anzhiyufont anzhiyu-icon-angle-double-right"></i></div><a class="catalog-more" href="/categories/">更多</a></div></div></div><div class="recent-post-item lastestpost-item" onclick="pjax.loadUrl('/posts/wz-14/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><span class="newPost">最新</span><a class="unvisited-post" href="/posts/wz-14/" title="用 Qexo 管理 Hexo 博客，实现 GitHub 自动部署一条龙">未读</a></div><a class="article-title" href="/posts/wz-14/" title="用 Qexo 管理 Hexo 博客，实现 GitHub 自动部署一条龙">用 Qexo 管理 Hexo 博客，实现 GitHub 自动部署一条龙</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2025-07-20T07:43:24.344Z" title="发表于 2025-07-20 15:43:24" time="2025-07-20 15:43:24">2025-07-20</time><time class="time_hidden" datetime="2025-07-20T08:03:00.416Z" title="更新于 2025-07-20 16:03:00" time="2025-07-20 16:03:00">2025-07-20</time></span></div><div class="content">前言Hexo 是一款广受欢迎的静态博客框架，但默认使用本地命令行进行文章编写和部署，使用门槛略高。本文将介绍如何使用 Qexo 搭建一个图形化的 Hexo 后台管理界面，并结合 GitHub Actions 实现自动化部署，让你实现“一条龙”博客管理体验。
+    </div><div class="category-bar-next" id="category-bar-next" onclick="anzhiyu.scrollCategoryBarToRight()"><i class="anzhiyufont anzhiyu-icon-angle-double-right"></i></div><a class="catalog-more" href="/categories/">更多</a></div></div></div><div class="recent-post-item lastestpost-item" onclick="pjax.loadUrl('/posts/wz-14/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><span class="newPost">最新</span><a class="unvisited-post" href="/posts/wz-14/" title="用 Qexo 管理 Hexo 博客，实现 GitHub 自动部署一条龙">未读</a></div><a class="article-title" href="/posts/wz-14/" title="用 Qexo 管理 Hexo 博客，实现 GitHub 自动部署一条龙">用 Qexo 管理 Hexo 博客，实现 GitHub 自动部署一条龙</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2025-07-20T07:43:24.344Z" title="发表于 2025-07-20 15:43:24" time="2025-07-20 15:43:24">2025-07-20</time><time class="time_hidden" datetime="2025-07-20T08:03:00.416Z" title="更新于 2025-07-20 16:03:00" time="2025-07-20 16:03:00">2025-07-20</time></span></div><div class="content">前言Hexo 是一款广受欢迎的静态博客框架，但默认使用本地命令行进行文章编写和部署，使用门槛略高。本文将介绍如何借助 Qexo 构建一个图形化的 Hexo 后台管理界面，并结合 GitHub Actions 实现自动部署，打造“一条龙”博客写作与发布流程。
 
 项目亮点
-图形化后台：Qexo 提供 Web 编辑器，可视化写作文章
-自动部署：推送文章自动触发 GitHub Actions，部署到服务器
-本地免操作：告别手动命令，浏览器即可完成全流程
+图形化后台：Qexo 提供 Web 编辑器，支持可视化写作与管理文章  
+自动化部署：每次提交文章后自动触发 GitHub Actions，实现自动部署  
+免本地操作：无需命令行，打开浏览器即可完成写作、提交与部署流程
 
 
-一、准备工作看上一篇文章 使用 GitHub Actions 自动部署 Hexo 博客，在github部署好
+一、准备工作请先参考上一篇文章 使用 GitHub Actions 自动部署 Hexo 博客，完成 Hexo 博客的 GitHub Pages 自动部署配置。
 
-二、部署 Qexo 后台Qexo 是一个支持 Hexo 的开源后台系统，基于 Node.js 和 Vue 开发。
-1. 安装 Qexo参考官方文档
-2. 配置 Qexo如果是根据我上一篇文章来配置的 Github 仓库，下面可以这么填：
-Github 密钥：PERSONAL_TOKENGithub 仓库：用户名&#x2F;hexo项目分支：main博客路径：留空
+二、部署 Qexo 后台Qexo 是一个专为 Hexo 打造的后台管理系统，基于 Node.js 和 Vue 开发，提供简洁直观的 Web 写作体验。
+1. 安装 Qexo详细安装方法请参考 Qexo 官方文档。
+2. 配置 Qexo如果你已按照上一篇文章部署了 Hexo 和 GitHub 仓库，以下是 Qexo 的推荐配置：
 
-
-四、使用流程演示
-打开 Qexo 后台，写一篇新文章并保存  
- ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/wz-13/')"><div class="post_cover left"><a href="/posts/wz-13/" title="使用 GitHub Actions 自动部署 Hexo 博客" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.osyb.cn/img/2025/07/4a1150ea98994528e0d9aafdf2fc714a.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用 GitHub Actions 自动部署 Hexo 博客" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">教程</div><div class="article-categories-original">Hexo</div><a class="unvisited-post" href="/posts/wz-13/" title="使用 GitHub Actions 自动部署 Hexo 博客">未读</a></div><a class="article-title" href="/posts/wz-13/" title="使用 GitHub Actions 自动部署 Hexo 博客">使用 GitHub Actions 自动部署 Hexo 博客</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2025-07-19T06:14:11.819Z" title="发表于 2025-07-19 14:14:11" time="2025-07-19 14:14:11">2025-07-19</time><time class="time_hidden" datetime="2025-07-19T09:45:48.499Z" title="更新于 2025-07-19 17:45:48" time="2025-07-19 17:45:48">2025-07-19</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%88%B1%E6%8A%98%E8%85%BE/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>爱折腾</span></a><a class="article-meta__tags" href="/tags/Hexo/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>Hexo</span></a><a class="article-meta__tags" href="/tags/GitHub-Actions/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>GitHub Actions</span></a><a class="article-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>教程</span></a></span></div><div class="content">前言Hexo 是一个快速、简洁且高效的静态博客框架，适合技术类博客搭建。通过 GitHub Actions，我们可以实现代码提交后自动构建并部署博客，彻底告别手动部署，提升效率。
+GitHu ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/posts/wz-13/')"><div class="post_cover left"><a href="/posts/wz-13/" title="使用 GitHub Actions 自动部署 Hexo 博客" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.osyb.cn/img/2025/07/4a1150ea98994528e0d9aafdf2fc714a.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用 GitHub Actions 自动部署 Hexo 博客" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">教程</div><div class="article-categories-original">Hexo</div><a class="unvisited-post" href="/posts/wz-13/" title="使用 GitHub Actions 自动部署 Hexo 博客">未读</a></div><a class="article-title" href="/posts/wz-13/" title="使用 GitHub Actions 自动部署 Hexo 博客">使用 GitHub Actions 自动部署 Hexo 博客</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2025-07-19T06:14:11.819Z" title="发表于 2025-07-19 14:14:11" time="2025-07-19 14:14:11">2025-07-19</time><time class="time_hidden" datetime="2025-07-19T09:45:48.499Z" title="更新于 2025-07-19 17:45:48" time="2025-07-19 17:45:48">2025-07-19</time></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%88%B1%E6%8A%98%E8%85%BE/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>爱折腾</span></a><a class="article-meta__tags" href="/tags/Hexo/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>Hexo</span></a><a class="article-meta__tags" href="/tags/GitHub-Actions/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>GitHub Actions</span></a><a class="article-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/" event.cancelbubble onclick="window.event.cancelBubble=true;"><span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>教程</span></a></span></div><div class="content">前言Hexo 是一个快速、简洁且高效的静态博客框架，适合技术类博客搭建。通过 GitHub Actions，我们可以实现代码提交后自动构建并部署博客，彻底告别手动部署，提升效率。
 
 一、创建 GitHub 仓库登录 GitHub，点击右上角的 +，选择 New repository。
 
