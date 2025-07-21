@@ -203,6 +203,13 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/tags/%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/tags/OpenWrt/</loc>
     <lastmod>2025-07-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -218,13 +225,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/tags/5G-%E9%80%9A%E4%BF%A1%E5%A3%B3/</loc>
-    <lastmod>2025-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/tags/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -310,14 +310,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/OpenWrt/</loc>
+    <loc>https://blog.osyb.cn/categories/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://blog.osyb.cn/categories/OpenWrt/</loc>
     <lastmod>2025-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
