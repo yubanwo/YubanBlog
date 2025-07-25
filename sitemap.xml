@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/about/</loc>
+    <loc>https://blog.osyb.cn/categories/</loc>
     
     <lastmod>2025-07-25</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/</loc>
+    <loc>https://blog.osyb.cn/about/</loc>
     
     <lastmod>2025-07-25</lastmod>
     
@@ -363,14 +363,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/Hexo/</loc>
+    <loc>https://blog.osyb.cn/categories/Docker/</loc>
     <lastmod>2025-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/Docker/</loc>
+    <loc>https://blog.osyb.cn/categories/Hexo/</loc>
     <lastmod>2025-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -391,14 +391,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/Windows/</loc>
+    <loc>https://blog.osyb.cn/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2025-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>https://blog.osyb.cn/categories/Windows/</loc>
     <lastmod>2025-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
