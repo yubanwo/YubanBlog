@@ -380,15 +380,12 @@
     <link href="https://blog.osyb.cn/posts/wz-2/"/>
     <id>https://blog.osyb.cn/posts/wz-2/</id>
     <published>2025-06-17T14:35:09.414Z</published>
-    <updated>2025-06-23T05:38:40.168Z</updated>
+    <updated>2025-07-26T10:20:21.892Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、创建储存空间"><a href="#一、创建储存空间" class="headerlink" title="一、创建储存空间"></a>一、创建储存空间</h2><p>在 <a href="https://console.dogecloud.com/oss/list">DogeCloud</a> 创建一个储存空间，选择标准型（基础型不支持使用 SDK 和 API 上传&#x2F;管理文件）<br><img src="https://cdn.osyb.cn/img/2025/06/c65dc3cf49b57c95059f4f013a674d7f.png/blog"></p><h2 id="二、获取储存空间的-SDK-参数"><a href="#二、获取储存空间的-SDK-参数" class="headerlink" title="二、获取储存空间的 SDK 参数"></a>二、获取储存空间的 SDK 参数</h2><p>打开刚刚创建的储存空间，点击 <code>SDK 参数</code> ，这里我们需要 <code>s3Bucket</code> 和 <code>s3Endpoint</code></p><p><img src="https://cdn.osyb.cn/img/2025/06/072834c906e0001127e83b700dbc7c69.png/blog"></p><h2 id="三、获取密钥信息"><a href="#三、获取密钥信息" class="headerlink" title="三、获取密钥信息"></a>三、获取密钥信息</h2><p>点击 <code>右上角</code>-<code>用户中心</code>-<code>密钥管理</code>，然后根据提示获取密钥（AccessKey &#x2F; SecretKey）</p><p><img src="https://cdn.osyb.cn/img/2025/06/d00003112cb09eae818db37c7df09819.png/blog"></p><p><img src="https://cdn.osyb.cn/img/2025/06/4504c39db8dd895b740cce3c8090744a.png/blog"></p><h2 id="四、配置Qexo"><a href="#四、配置Qexo" class="headerlink" title="四、配置Qexo"></a>四、配置Qexo</h2><p>为了方便演示使用测试数据：<br>AccessKey：3aea5a07hkk6dd167<br>Secretkey：a8ed57e46376ldfhakfte442a21604<br>s3Bucket：s-gz-6666-yuban-xxx-123456789<br>s3Endpoint：<a href="https://cos.ap-xxx.myqcloud.com/">https://cos.ap-xxx.myqcloud.com</a></p><p>在Qexo的设置里，找到图床配置：<br>图床类型：<code>DogeCloud云存储</code><br>DogeCloud_Accesskey：<code>3aea5a07hkk6dd167</code><br>DogeCloud_Secretkey：<code>a8ed57e46376ldfhakfte442a21604</code><br>储存桶名：<code>上传图片的一级目录</code><br>边缘节点：<code>https://s-xx-6666-yuban-xxx-123456789.cos.ap-xxx.myqcloud.com</code><br>保存路径：<a href="https://www.oplog.cn/qexo/configs/upload.html#%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84">官方文档</a><br>自定义域名：<code>https://储存空间域名/储存桶名/保存路径</code></p><blockquote><p>按道理说储存桶名填 s3Bucket，边缘节点填 s3Endpoint，但是我这样弄了上传图片会报错</p></blockquote><p><img src="https://cdn.osyb.cn/img/2025/06/466d42b66865812f969dbc54d2561bd9.png/blog"></p><h2 id="五、测试"><a href="#五、测试" class="headerlink" title="五、测试"></a>五、测试</h2><p>在Qexo里面上传一张图片测试，可以看到我的图片链接是：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.osyb.cn/img/2025/06/07142d4073fb43a5ad9943e3f9c27d25.png</span><br></pre></td></tr></table></figure><p><img src="https://cdn.osyb.cn/img/2025/06/02143b6dd88a361cf58fd042d22cd117.png/blog"></p><h2 id="六、最后"><a href="#六、最后" class="headerlink" title="六、最后"></a>六、最后</h2><p>我现在用的Qexo版本是 <code>3.6.0</code>，其他版本我没尝试过，不过参数就那么几个，多测试一下就好了</p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用。</p></blockquote>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;一、创建储存空间&quot;&gt;&lt;a href=&quot;#一、创建储存空间&quot; class=&quot;headerlink&quot; title=&quot;一、创建储存空间&quot;&gt;&lt;/a&gt;一、创建储存空间&lt;/h2&gt;&lt;p&gt;在 &lt;a href=&quot;https://console.dogecloud.com/oss/l</summary>
-      
+    <summary type="html">本文详细介绍了如何在 DogeCloud 创建存储空间，获取 SDK 参数和密钥，并在 Qexo 图床中正确配置，实现图片上传和管理。适合需要结合 DogeCloud 和 Qexo 搭建私有图床的用户参考。</summary>
     
     
     
