@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/about/</loc>
+    
+    <lastmod>2025-07-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/categories/</loc>
     
     <lastmod>2025-07-26</lastmod>
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/about/</loc>
+    <loc>https://blog.osyb.cn/posts/wz-6/</loc>
     
     <lastmod>2025-07-26</lastmod>
     
@@ -113,15 +122,6 @@
     <loc>https://blog.osyb.cn/posts/wz-16/</loc>
     
     <lastmod>2025-07-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/posts/wz-6/</loc>
-    
-    <lastmod>2025-07-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
