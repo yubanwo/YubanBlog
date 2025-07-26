@@ -29,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/posts/wz-9/</loc>
+    
+    <lastmod>2025-07-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/posts/wz-10/</loc>
     
     <lastmod>2025-07-26</lastmod>
@@ -113,15 +122,6 @@
     <loc>https://blog.osyb.cn/posts/wz-4/</loc>
     
     <lastmod>2025-07-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/posts/wz-9/</loc>
-    
-    <lastmod>2025-07-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -214,14 +214,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/%E6%B4%BB%E5%8A%A8%E8%B5%84%E8%AE%AF/</loc>
+    <loc>https://blog.osyb.cn/tags/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://blog.osyb.cn/tags/%E6%B4%BB%E5%8A%A8%E8%B5%84%E8%AE%AF/</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -342,14 +342,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/%E6%B4%BB%E5%8A%A8%E8%B5%84%E8%AE%AF/</loc>
+    <loc>https://blog.osyb.cn/categories/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://blog.osyb.cn/categories/%E6%B4%BB%E5%8A%A8%E8%B5%84%E8%AE%AF/</loc>
     <lastmod>2025-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
