@@ -284,13 +284,6 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/Qexo/</loc>
-    <lastmod>2025-07-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.osyb.cn/tags/CDN/</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -298,7 +291,21 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/tags/Qexo/</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/tags/postmarketOS/</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.osyb.cn/tags/OpenWrt/</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -313,13 +320,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/tags/Linux/</loc>
-    <lastmod>2025-07-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/tags/OpenWrt/</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
