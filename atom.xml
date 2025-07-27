@@ -17,7 +17,7 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>如何在 Hexo 中安装和配置 Sitemap 插件</title>
+    <title>Hexo 博客安装与配置 Sitemap 插件，轻松生成网站地图</title>
     <link href="https://blog.osyb.cn/posts/wz-17/"/>
     <id>https://blog.osyb.cn/posts/wz-17/</id>
     <published>2025-07-27T08:25:43.749Z</published>
@@ -30,6 +30,16 @@
     
     
     
+    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="https://blog.osyb.cn/categories/Hexo/"/>
+    
+    
+    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
+    
+    <category term="Hexo" scheme="https://blog.osyb.cn/tags/Hexo/"/>
+    
+    <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
