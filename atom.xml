@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-07-27T08:45:46.006Z</updated>
+  <updated>2025-07-28T01:37:01.621Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Whistle 网络调试工具安装与使用指南</title>
+    <link href="https://blog.osyb.cn/posts/wz-18/"/>
+    <id>https://blog.osyb.cn/posts/wz-18/</id>
+    <published>2025-07-28T01:02:49.536Z</published>
+    <updated>2025-07-28T01:37:01.621Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Whistle 是一个基于 Node.js 的网络调试工具，能够帮助开发人员快速捕获和修改网络请求。它支持代理、抓包、模拟响应等功能，广泛用于调试和开发 Web 应用。</p><hr><h2 id="一、环境要求"><a href="#一、环境要求" class="headerlink" title="一、环境要求"></a>一、环境要求</h2><ul><li><strong>Node.js</strong> 版本 12 及以上</li><li><strong>npm</strong> 或 <strong>yarn</strong> 包管理工具</li></ul><hr><h2 id="二、安装-Whistle"><a href="#二、安装-Whistle" class="headerlink" title="二、安装 Whistle"></a>二、安装 Whistle</h2><h3 id="1-使用-npm-安装"><a href="#1-使用-npm-安装" class="headerlink" title="1. 使用 npm 安装"></a>1. 使用 npm 安装</h3><p>打开终端，执行以下命令安装 Whistle：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g whistle</span><br></pre></td></tr></table></figure><hr><h3 id="2-使用-yarn-安装"><a href="#2-使用-yarn-安装" class="headerlink" title="2. 使用 yarn 安装"></a>2. 使用 yarn 安装</h3><p>如果你使用 yarn，可以执行以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn global add whistle</span><br></pre></td></tr></table></figure><hr><h2 id="三、启动-Whistle"><a href="#三、启动-Whistle" class="headerlink" title="三、启动 Whistle"></a>三、启动 Whistle</h2><p>安装完成后，可以通过以下命令启动 Whistle：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">w2 start</span><br></pre></td></tr></table></figure><p>默认情况下，Whistle 会监听在 <a href="https://localhost:8899/">localhost:8899</a>。你可以通过浏览器访问它的管理界面，进行进一步的配置。</p><hr><h2 id="四、配置代理"><a href="#四、配置代理" class="headerlink" title="四、配置代理"></a>四、配置代理</h2><p>Whistle 会自动配置代理，你只需要设置你的设备或浏览器代理为 Whistle 监听的地址（默认 localhost:8899）。</p><p>在浏览器或设备的代理设置中，设置 HTTP 和 HTTPS 代理地址为 localhost，端口为 8899。</p><hr><h2 id="五、使用-Whistle"><a href="#五、使用-Whistle" class="headerlink" title="五、使用 Whistle"></a>五、使用 Whistle</h2><p>抓包: 在 Whistle 的管理界面，你可以查看所有的 HTTP 请求和响应，甚至可以修改它们。</p><p>模拟响应: 你可以创建自定义的规则，模拟特定请求的响应。</p><p>修改请求: 通过规则，可以拦截并修改请求内容。</p><hr><h2 id="六、升级-Whistle"><a href="#六、升级-Whistle" class="headerlink" title="六、升级 Whistle"></a>六、升级 Whistle</h2><p>Whistle 支持通过 npm 或 yarn 进行升级。可以通过以下命令检查是否有新版本并进行更新：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm update -g whistle</span><br><span class="line"><span class="comment">#或者</span></span><br><span class="line">yarn global upgrade whistle</span><br></pre></td></tr></table></figure><hr><h2 id="七、卸载-Whistle"><a href="#七、卸载-Whistle" class="headerlink" title="七、卸载 Whistle"></a>七、卸载 Whistle</h2><p>如果你不再需要使用 Whistle，可以通过以下命令卸载它：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g whistle</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">yarn global remove whistle</span><br></pre></td></tr></table></figure><hr><h2 id="八、常见问题"><a href="#八、常见问题" class="headerlink" title="八、常见问题"></a>八、常见问题</h2><blockquote><p>为什么 Whistle 无法启动？</p></blockquote><ul><li>确保你的系统已安装 Node.js 和 npm。</li><li>检查端口 8899 是否被其他程序占用。</li></ul><hr><h2 id="九、项目地址"><a href="#九、项目地址" class="headerlink" title="九、项目地址"></a>九、项目地址</h2><ul><li><a href="https://github.com/avwo/whistle">GitHub 仓库</a></li><li><a href="https://">Whistle 官方文档</a></li></ul><hr><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>Whistle 是一个简便高效的网络调试工具，适用于捕获和修改网络请求。它帮助开发者快速调试 Web 应用。安装和配置都非常简单，能够提高开发效率。如果遇到问题，可以参考官方文档或寻求社区帮助。</p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用。</p></blockquote><hr>]]></content>
+    
+    
+    <summary type="html">本文介绍了 Whistle 网络调试工具的安装与使用方法，包括环境要求、配置代理、抓包、模拟响应等功能，帮助开发者快速调试和修改网络请求。</summary>
+    
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="开源项目" scheme="https://blog.osyb.cn/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Node.js" scheme="https://blog.osyb.cn/tags/Node-js/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo 博客安装与配置 Sitemap 插件，轻松生成网站地图</title>
