@@ -29,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/posts/wz-18/</loc>
+    
+    <lastmod>2025-07-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/posts/wz-16/</loc>
     
     <lastmod>2025-07-28</lastmod>
@@ -230,13 +239,6 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2025-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.osyb.cn/tags/OpenWrt/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -252,6 +254,13 @@
   
   <url>
     <loc>https://blog.osyb.cn/tags/5G-%E9%80%9A%E4%BF%A1%E5%A3%B3/</loc>
+    <lastmod>2025-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.osyb.cn/tags/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -294,6 +303,13 @@
   
   <url>
     <loc>https://blog.osyb.cn/tags/CDN/</loc>
+    <lastmod>2025-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.osyb.cn/tags/Node-js/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -358,14 +374,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://blog.osyb.cn/categories/OpenWrt/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/OpenWrt/</loc>
+    <loc>https://blog.osyb.cn/categories/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -393,6 +409,13 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2025-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/categories/Linux/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -401,13 +424,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/categories/Windows/</loc>
-    <lastmod>2025-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
