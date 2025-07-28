@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/categories/</loc>
+    
+    <lastmod>2025-07-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/about/</loc>
     
     <lastmod>2025-07-28</lastmod>
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/</loc>
+    <loc>https://blog.osyb.cn/posts/wz-16/</loc>
     
     <lastmod>2025-07-28</lastmod>
     
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/posts/wz-15/</loc>
-    
-    <lastmod>2025-07-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/posts/wz-16/</loc>
     
     <lastmod>2025-07-27</lastmod>
     
@@ -209,13 +209,6 @@
 
   
   <url>
-    <loc>https://blog.osyb.cn/tags/%E6%B4%BB%E5%8A%A8%E8%B5%84%E8%AE%AF/</loc>
-    <lastmod>2025-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.osyb.cn/tags/JetBrains/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -224,6 +217,13 @@
   
   <url>
     <loc>https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2025-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.osyb.cn/tags/%E6%B4%BB%E5%8A%A8%E8%B5%84%E8%AE%AF/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -344,14 +344,14 @@
 
   
   <url>
-    <loc>https://blog.osyb.cn/categories/%E6%B4%BB%E5%8A%A8%E8%B5%84%E8%AE%AF/</loc>
+    <loc>https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://blog.osyb.cn/categories/%E6%B4%BB%E5%8A%A8%E8%B5%84%E8%AE%AF/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
