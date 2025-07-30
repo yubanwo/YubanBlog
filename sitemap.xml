@@ -388,14 +388,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/Docker/</loc>
+    <loc>https://blog.osyb.cn/categories/Hexo/</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/Hexo/</loc>
+    <loc>https://blog.osyb.cn/categories/Docker/</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
