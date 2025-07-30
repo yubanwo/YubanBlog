@@ -410,7 +410,7 @@
     <link href="https://blog.osyb.cn/posts/wz-3/"/>
     <id>https://blog.osyb.cn/posts/wz-3/</id>
     <published>2025-06-22T14:06:27.246Z</published>
-    <updated>2025-06-23T05:36:36.980Z</updated>
+    <updated>2025-07-29T22:39:01.733Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、图形用户界面"><a href="#一、图形用户界面" class="headerlink" title="一、图形用户界面"></a>一、图形用户界面</h2><h3 id="关闭图形用户界面"><a href="#关闭图形用户界面" class="headerlink" title="关闭图形用户界面"></a>关闭图形用户界面</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rc-update del tinydm</span><br></pre></td></tr></table></figure><h3 id="开启图形用户界面"><a href="#开启图形用户界面" class="headerlink" title="开启图形用户界面"></a>开启图形用户界面</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rc-update add tinydm default</span><br></pre></td></tr></table></figure>]]></content>
     
