@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-07-31T08:13:54.300Z</updated>
+  <updated>2025-07-28T01:37:01.621Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>title</title>
-    <link href="https://blog.osyb.cn/posts/wz-19/"/>
-    <id>https://blog.osyb.cn/posts/wz-19/</id>
-    <published>2025-07-31T08:13:53.878Z</published>
-    <updated>2025-07-31T08:13:54.300Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>不蒜子（Busuanzi）一直是我用得最多的静态站点访问统计工具：免注册、零配置、嵌一段 <code>&lt;script&gt;</code> 就能显示 PV&#x2F;UV，非常方便。</p><p>但随着网站访问量增加，我越来越频繁地遇到两个问题：</p><ul><li><strong>延迟高</strong>：统计数据经常 2～5 秒之后才加载出来，有时候根本加载不了；</li><li><strong>服务不稳定</strong>：Busuanzi 官方服务依赖第三方接口（比如 LeanCloud 早期），维护成本高，也偶尔直接挂掉，数据无法访问。</li></ul><p>于是我决定：<strong>干脆自建一个 Busuanzi 后端，和原版接口完全兼容，但性能更高、数据更稳，还可以自定义逻辑。</strong></p><hr><h2 id="我的目标"><a href="#我的目标" class="headerlink" title="我的目标"></a>我的目标</h2><ul><li><strong>接口保持一致</strong>：前端不用修改，只改一行请求地址即可切换到自建服务；</li><li><strong>高性能</strong>：支持高并发访问、Redis 缓存</li><li><strong>数据可靠</strong>：PV&#x2F;UV 实时记录，定时写入 PostgreSQL，持久化可查；</li><li><strong>支持 JSONP</strong>：兼容原版 <code>&lt;script src=...&gt;</code> 加载；</li><li><strong>支持 cookie 去重</strong>：UV 统计不重复，支持按天过期；</li></ul><hr><h2 id="技术方案"><a href="#技术方案" class="headerlink" title="技术方案"></a>技术方案</h2><p>我选用了 Go 语言编写后端服务，配合 Redis 和 PostgreSQL 实现一个<strong>轻量、稳定、可扩展</strong>的统计系统：</p><table><thead><tr><th>模块</th><th>技术</th></tr></thead><tbody><tr><td>Web 框架</td><td>Gin</td></tr><tr><td>缓存</td><td>Redis</td></tr><tr><td>数据库</td><td>PostgreSQL</td></tr><tr><td>PV&#x2F;UV 去重</td><td>Cookie + Redis Set</td></tr><tr><td>防击穿</td><td>singleflight</td></tr><tr><td>写入优化</td><td>批量异步入库</td></tr><tr><td>支持格式</td><td>JSONP callback</td></tr></tbody></table><hr><h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>前端代码<strong>保持原样</strong>，只需要把默认接口地址换成我自建的即可：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>替换为</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.osyb.cn/static/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>或者把js文件里面的</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallbac</span><br></pre></td></tr></table></figure><p>替换为</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">api.osyb.cn/busuanzi?jsonpCallback=BusuanziCallbac</span><br></pre></td></tr></table></figure><p>在安知鱼主题中怎么使用？</p><p>直接进入主题配置文件，翻到最后面</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;不蒜子（Busuanzi）一直是我用得最多的静态站点访问统计工具：免注册、零配置、嵌一段 &lt;code&gt;&amp;lt;script&amp;gt;&lt;/cod</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Whistle 网络调试工具安装与使用指南</title>
