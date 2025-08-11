@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-08-10T09:00:00.000Z</updated>
+  <updated>2025-08-11T08:45:46.006Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHub Actions 自动化部署入门</title>
+    <link href="https://blog.osyb.cn/posts/wz-23/"/>
+    <id>https://blog.osyb.cn/posts/wz-23/</id>
+    <published>2025-08-11T08:25:43.749Z</published>
+    <updated>2025-08-11T08:45:46.006Z</updated>
+    
+    <content type="html"><![CDATA[<p>前言</p><p>在现代开发中，手动部署不仅耗时，还容易出错。<strong>GitHub Actions</strong> 作为 GitHub 提供的 CI&#x2F;CD（持续集成与持续部署）服务，可以帮你在代码提交、合并甚至定时任务时，自动执行构建、测试和部署操作。<br>今天我就带你从零开始，学会用 GitHub Actions 自动化部署项目。</p><hr><p>一、什么是 GitHub Actions？</p><p>GitHub Actions 是 GitHub 内置的自动化工具，可以在你的仓库内设置一系列工作流（workflow），让代码在触发条件下自动执行指定任务，比如：</p><ul><li>自动构建和打包</li><li>自动部署到服务器或云平台</li><li>自动执行单元测试</li><li>自动生成文档</li></ul><p>简单来说，就是<strong>让部署从“手动点击”变成“自动触发”</strong>。</p><hr><p>二、创建你的第一个工作流</p><ol><li>在你的项目根目录创建 <code>.github/workflows</code> 文件夹  </li><li>新建一个 <code>deploy.yml</code> 文件  </li><li>编写一个最简单的部署示例：</li></ol><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">Website</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">main</span>  <span class="comment"># 当 main 分支有提交时触发</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">拉取代码</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v4</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">安装</span> <span class="string">Node.js</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v4</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&#x27;18&#x27;</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">安装依赖</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">构建项目</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">run</span> <span class="string">build</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">部署到服务器</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line">          <span class="string">ssh</span> <span class="string">user@your-server</span> <span class="string">&quot;cd /path/to/project &amp;&amp; git pull &amp;&amp; npm install &amp;&amp; pm2 restart all&quot;</span></span><br></pre></td></tr></table></figure><p>这样，每次你往 <code>main</code> 分支推送代码，GitHub Actions 都会自动执行部署流程。</p><hr><p>三、Secrets 配置</p><p>为了安全起见，敏感信息（服务器 IP、账号、密码、API Key 等）不要直接写进 YAML 文件。<br>在仓库 <strong>Settings → Secrets and variables → Actions</strong> 里添加变量，例如：</p><ul><li><code>SERVER_HOST</code>：服务器 IP</li><li><code>SERVER_USER</code>：服务器用户名</li><li><code>SERVER_KEY</code>：SSH 私钥</li></ul><p>然后在 <code>deploy.yml</code> 中用 <code>$&#123;&#123; secrets.SERVER_HOST &#125;&#125;</code> 引用。</p><hr><p>四、常见部署场景</p><ul><li><strong>静态网站部署到 GitHub Pages</strong></li><li><strong>Node.js 项目部署到 VPS</strong></li><li><strong>Python 项目自动化发布到 PyPI</strong></li><li><strong>Docker 镜像构建并推送到 Docker Hub</strong></li></ul><p>每种场景的工作流配置略有不同，但核心思想都是：</p><blockquote><p>触发事件 → 运行任务 → 部署或发布</p></blockquote><hr><p>五、优化与进阶</p><ul><li>使用 <strong>缓存依赖</strong> 加速构建  <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">缓存</span> <span class="string">Node</span> <span class="string">模块</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">actions/cache@v3</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">node_modules</span></span><br><span class="line">    <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-node-$&#123;&#123;</span> <span class="string">hashFiles(&#x27;**/package-lock.json&#x27;)</span> <span class="string">&#125;&#125;</span></span><br></pre></td></tr></table></figure></li><li>多环境部署（测试环境、生产环境）</li><li>定时触发（例如每天凌晨自动构建）</li></ul><hr><p>结语</p><p>GitHub Actions 不仅适合部署，还能帮你完成一切重复性工作。<br>从今天开始，把那些机械的“打包、上传、重启服务”交给它，你就能腾出更多时间专注于业务和创新。</p><hr><blockquote><p>⚠️ 免责声明：本文仅供个人学习与技术研究使用。</p></blockquote><hr>]]></content>
+    
+    
+    <summary type="html">本文带你快速入门 GitHub Actions，从基础概念到部署流程，让你轻松实现代码的自动化部署。</summary>
+    
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="SEO" scheme="https://blog.osyb.cn/categories/SEO/"/>
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="GitHub" scheme="https://blog.osyb.cn/tags/GitHub/"/>
+    
+  </entry>
   
   <entry>
     <title>VS Code 必装插件推荐与使用教程</title>
@@ -506,30 +531,6 @@
     <category term="随身WiFi" scheme="https://blog.osyb.cn/tags/%E9%9A%8F%E8%BA%ABWiFi/"/>
     
     <category term="5G 通信壳" scheme="https://blog.osyb.cn/tags/5G-%E9%80%9A%E4%BF%A1%E5%A3%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>postmarketOS 常用命令</title>
-    <link href="https://blog.osyb.cn/posts/wz-3/"/>
-    <id>https://blog.osyb.cn/posts/wz-3/</id>
-    <published>2025-06-22T14:06:27.246Z</published>
-    <updated>2025-07-29T22:39:01.733Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一、图形用户界面"><a href="#一、图形用户界面" class="headerlink" title="一、图形用户界面"></a>一、图形用户界面</h2><h3 id="关闭图形用户界面"><a href="#关闭图形用户界面" class="headerlink" title="关闭图形用户界面"></a>关闭图形用户界面</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rc-update del tinydm</span><br></pre></td></tr></table></figure><h3 id="开启图形用户界面"><a href="#开启图形用户界面" class="headerlink" title="开启图形用户界面"></a>开启图形用户界面</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rc-update add tinydm default</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;一、图形用户界面&quot;&gt;&lt;a href=&quot;#一、图形用户界面&quot; class=&quot;headerlink&quot; title=&quot;一、图形用户界面&quot;&gt;&lt;/a&gt;一、图形用户界面&lt;/h2&gt;&lt;h3 id=&quot;关闭图形用户界面&quot;&gt;&lt;a href=&quot;#关闭图形用户界面&quot; class=&quot;head</summary>
-      
-    
-    
-    
-    <category term="记录" scheme="https://blog.osyb.cn/categories/%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="postmarketOS" scheme="https://blog.osyb.cn/tags/postmarketOS/"/>
     
   </entry>
   
