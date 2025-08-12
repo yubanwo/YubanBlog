@@ -29,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/posts/wz-26/</loc>
+    
+    <lastmod>2025-08-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/posts/wz-25/</loc>
     
     <lastmod>2025-08-12</lastmod>
@@ -428,6 +437,13 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/tags/Windows/</loc>
+    <lastmod>2025-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/tags/postmarketOS/</loc>
     <lastmod>2025-08-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -450,13 +466,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/tags/Linux/</loc>
-    <lastmod>2025-08-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/tags/Windows/</loc>
     <lastmod>2025-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -535,6 +544,13 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/categories/Windows/</loc>
+    <lastmod>2025-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/categories/%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2025-08-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -543,13 +559,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/categories/Linux/</loc>
-    <lastmod>2025-08-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/categories/Windows/</loc>
     <lastmod>2025-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
