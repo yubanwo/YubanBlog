@@ -42,6 +42,33 @@
   </entry>
   
   <entry>
+    <title>用 ChatGPT 批量生产 SEO 内容的完整工作流（从关键词到发布）</title>
+    <link href="https://blog.osyb.cn/posts/wz-24/"/>
+    <id>https://blog.osyb.cn/posts/wz-24/</id>
+    <published>2025-08-11T08:10:00.000Z</published>
+    <updated>2025-08-11T08:20:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>上一篇文章我们聊了 <strong>2025 年站长必学的 5 个 ChatGPT SEO 用法</strong>，很多朋友留言说想要更系统的操作指南。<br>今天我就分享一套从 <strong>关键词挖掘 → 内容撰写 → Meta 优化 → 内链布局 → 发布</strong> 的完整工作流，让你用 ChatGPT 实现批量生产 SEO 内容，同时保证质量。</p><hr><h2 id="一、关键词挖掘与分类"><a href="#一、关键词挖掘与分类" class="headerlink" title="一、关键词挖掘与分类"></a>一、关键词挖掘与分类</h2><p>任何 SEO 内容的起点都是关键词。<br><strong>操作步骤</strong>：  </p><ol><li>确定主关键词（例如“网站加速”）  </li><li>用 ChatGPT 扩展长尾词  </li><li>按搜索意图（资讯型、工具型、教程型）分组</li></ol><p><strong>示例 Prompt</strong>：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">请列出50个与“网站加速”相关的长尾关键词，并根据搜索意图分类。</span><br></pre></td></tr></table></figure><p><strong>效果</strong>：快速得到可覆盖多个搜索入口的关键词池。</p><hr><h2 id="二、生成文章大纲"><a href="#二、生成文章大纲" class="headerlink" title="二、生成文章大纲"></a>二、生成文章大纲</h2><p>有了关键词，就需要大纲来确定文章结构。<br><strong>操作步骤</strong>：  </p><ol><li>给 ChatGPT 一个长尾关键词  </li><li>要求它生成包含 H2、H3 标题的详细大纲  </li><li>确保结构符合 SEO 习惯（主标题包含关键词，小标题涵盖相关词）</li></ol><p><strong>示例 Prompt</strong>：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">帮我为关键词“网站加速插件推荐”生成一篇SEO友好的文章大纲，包含H2和H3标题。</span><br></pre></td></tr></table></figure><hr><h2 id="三、撰写高质量正文"><a href="#三、撰写高质量正文" class="headerlink" title="三、撰写高质量正文"></a>三、撰写高质量正文</h2><p>ChatGPT 可以帮你先产出初稿，再人工润色。<br><strong>操作步骤</strong>：  </p><ol><li>分段让 ChatGPT 写内容，避免重复和跑题  </li><li>在内容中自然嵌入关键词  </li><li>插入数据、案例、图片等，增加权威性</li></ol><p><strong>示例 Prompt</strong>：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">根据以下大纲为我写正文，每段不少于150字，并自然融入关键词“网站加速插件”。</span><br></pre></td></tr></table></figure><hr><h2 id="四、优化标题与-Meta-信息"><a href="#四、优化标题与-Meta-信息" class="headerlink" title="四、优化标题与 Meta 信息"></a>四、优化标题与 Meta 信息</h2><p>标题和描述直接影响点击率（CTR）。<br><strong>操作步骤</strong>：  </p><ul><li>用 ChatGPT 优化文章标题，保留关键词同时增加吸引力  </li><li>生成 155 字以内的 Meta Description，兼顾关键词与可读性</li></ul><p><strong>示例 Prompt</strong>：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">帮我优化标题“网站访问速度优化技巧”，要求：保留关键词，提高吸引力。</span><br></pre></td></tr></table></figure><hr><h2 id="五、内链布局与锚文本"><a href="#五、内链布局与锚文本" class="headerlink" title="五、内链布局与锚文本"></a>五、内链布局与锚文本</h2><p>合理的内链可以提升网站整体权重。<br><strong>操作步骤</strong>：  </p><ol><li>将文章贴给 ChatGPT  </li><li>让它建议 3-5 个站内相关文章作为内链位置  </li><li>生成自然的锚文本（包含关键词）</li></ol><p><strong>示例 Prompt</strong>：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">根据以下文章内容，给出3个适合添加站内链接的位置，并生成锚文本。</span><br></pre></td></tr></table></figure><hr><h2 id="六、批量导入与发布"><a href="#六、批量导入与发布" class="headerlink" title="六、批量导入与发布"></a>六、批量导入与发布</h2><p>当你批量生产了多篇文章，可以用脚本或 CMS 插件一次性导入：  </p><ul><li>WordPress 用户可用 <strong>WP All Import</strong>  </li><li>Hexo &#x2F; Hugo 用户可批量生成 Markdown 文件  </li><li>发布前可再让 ChatGPT 批量检查标题、关键词密度、Alt 标签等</li></ul><hr><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>这套工作流最大的好处是：  </p><ul><li><strong>可重复</strong>：任何主题都能套用  </li><li><strong>高效率</strong>：一人一天可完成 5-10 篇高质量文章  </li><li><strong>SEO 友好</strong>：从关键词到内链全覆盖</li></ul><p>不要只停留在“让 ChatGPT 写文章”这个层面，<br>而是要让它成为<strong>你的 SEO 助理</strong>，帮你完成从选题到发布的全流程。</p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用。</p></blockquote><hr>]]></content>
+    
+    
+    <summary type="html">本文分享一套完整的 ChatGPT SEO 内容生产工作流，从关键词挖掘、文章大纲、正文撰写、Meta 优化、内链布局到发布，帮助站长实现内容批量化与高质量并存。</summary>
+    
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="SEO" scheme="https://blog.osyb.cn/categories/SEO/"/>
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="ChatGPT" scheme="https://blog.osyb.cn/tags/ChatGPT/"/>
+    
+    <category term="SEO" scheme="https://blog.osyb.cn/tags/SEO/"/>
+    
+  </entry>
+  
+  <entry>
     <title>VS Code 必装插件推荐与使用教程</title>
     <link href="https://blog.osyb.cn/posts/wz-22/"/>
     <id>https://blog.osyb.cn/posts/wz-22/</id>
@@ -504,33 +531,6 @@
     
     
     <category term="OpenWrt " scheme="https://blog.osyb.cn/tags/OpenWrt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>随身 WiFi 通过 USB 接入 OpenWrt 路由器共享网络却不能访问 IPv6 网站的解决方法（NAT6 版）</title>
-    <link href="https://blog.osyb.cn/posts/wz-4/"/>
-    <id>https://blog.osyb.cn/posts/wz-4/</id>
-    <published>2025-06-26T10:56:53.081Z</published>
-    <updated>2025-07-26T10:19:01.746Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>有时候，我们通过随身 WiFi（如 USB 网卡）将路由器连接至外部网络后，虽然 <code>wan6</code> 接口成功获取了 IPv6 地址，但下游设备却无法访问 IPv6 网站。</p><p>如果你的网络环境不支持 IPv6 前缀委派（PD），这时可以考虑使用一种折中的方案 —— <strong>NAT6</strong>，即将 IPv6 网络做 SNAT 转换，以绕过 PD 限制，从而实现 IPv6 访问。</p><p>本文将介绍如何基于 OpenWrt 设置 NAT6，以实现 IPv6 网络访问。</p><hr><h2 id="设置方法"><a href="#设置方法" class="headerlink" title="设置方法"></a>设置方法</h2><h3 id="第一步：关闭-IPv6-源路由"><a href="#第一步：关闭-IPv6-源路由" class="headerlink" title="第一步：关闭 IPv6 源路由"></a>第一步：关闭 IPv6 源路由</h3><p>进入 OpenWrt Web 管理后台：</p><ul><li>点击 <code>网络</code> → <code>接口</code> → <code>wan6</code> → <code>编辑</code> → <code>高级设置</code></li><li>关闭 <strong>IPv6 源路由</strong>（防止意外路由泄露）</li></ul><p><img src="https://cdn.osyb.cn/img/2025/06/25ec3ad221c5d032c351766a1e30296f.png/blog" alt="关闭 IPv6 源路由"></p><hr><h3 id="第二步：修改-LAN-接口默认路由器通告"><a href="#第二步：修改-LAN-接口默认路由器通告" class="headerlink" title="第二步：修改 LAN 接口默认路由器通告"></a>第二步：修改 LAN 接口默认路由器通告</h3><ul><li>点击 <code>网络</code> → <code>接口</code> → <code>lan</code> → <code>编辑</code> → <code>DHCP 服务器</code> → <code>IPv6 RA 设置</code></li><li>修改 <strong>默认路由器</strong> 为 <strong>强制的</strong>（确保设备使用路由器的 IPv6 出口）</li></ul><p><img src="https://cdn.osyb.cn/img/2025/07/95f5428103d6180e3e79047b473f47a8.png/blog" alt="修改 LAN 接口默认路由器通告"></p><hr><h3 id="第三步：启用-IPv6-伪装（NAT6-核心）"><a href="#第三步：启用-IPv6-伪装（NAT6-核心）" class="headerlink" title="第三步：启用 IPv6 伪装（NAT6 核心）"></a>第三步：启用 IPv6 伪装（NAT6 核心）</h3><ul><li>点击 <code>网络</code> → <code>防火墙</code> → <code>常规设置</code> → <code>区域</code> → <code>wan</code> → <code>编辑</code> → <code>高级设置</code></li><li>启用 <strong>IPv6 伪装</strong>（即 SNAT 类似功能）</li></ul><p><img src="https://cdn.osyb.cn/img/2025/07/95e66a97be7f6d2b4217bf142f668f69.png/blog" alt="启用 IPv6 伪装"></p><p>此功能从 <strong>OpenWrt 22.03</strong> 起默认支持。</p><hr><h2 id="验证是否生效"><a href="#验证是否生效" class="headerlink" title="验证是否生效"></a>验证是否生效</h2><p>执行以下命令测试 IPv6 连通性：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping6 ipv6.google.com</span><br></pre></td></tr></table></figure><p>或访问：<a href="https://test-ipv6.com/">https://test-ipv6.com</a></p><hr><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul><li>NAT6 不是原生 IPv6，某些服务（如 P2P 或远程入站连接）可能不可用。</li><li>建议优先使用中继模式或原生 PD，如环境受限再使用 NAT6。</li></ul><hr><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>如果你所处的网络环境无法下发 IPv6 前缀（如部分校园网或 5G 通信壳），NAT6 是目前一个相对简单有效的 IPv6 解决方案。</p><hr><blockquote><p>📝 延伸阅读：<a href="https://blog.osyb.cn/posts/wz-12/">IPv6 中继配置教程</a></p></blockquote><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用，请勿用于任何非法用途。</p></blockquote><hr>]]></content>
-    
-    
-    <summary type="html">本文介绍了在 OpenWrt 系统中如何配置 NAT6（IPv6 网络伪装），解决无 IPv6 前缀委派（PD）环境下的 IPv6 访问问题，帮助用户实现稳定的 IPv6 网络连接。</summary>
-    
-    
-    
-    <category term="OpenWrt" scheme="https://blog.osyb.cn/categories/OpenWrt/"/>
-    
-    
-    <category term="爱折腾" scheme="https://blog.osyb.cn/tags/%E7%88%B1%E6%8A%98%E8%85%BE/"/>
-    
-    <category term="OpenWrt " scheme="https://blog.osyb.cn/tags/OpenWrt/"/>
-    
-    <category term="随身WiFi" scheme="https://blog.osyb.cn/tags/%E9%9A%8F%E8%BA%ABWiFi/"/>
-    
-    <category term="5G 通信壳" scheme="https://blog.osyb.cn/tags/5G-%E9%80%9A%E4%BF%A1%E5%A3%B3/"/>
     
   </entry>
   
