@@ -399,20 +399,6 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/Node-js/</loc>
-    <lastmod>2025-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/tags/Qexo/</loc>
-    <lastmod>2025-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.osyb.cn/tags/ChatGPT/</loc>
     <lastmod>2025-08-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -421,6 +407,13 @@
   
   <url>
     <loc>https://blog.osyb.cn/tags/SEO/</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.osyb.cn/tags/Qexo/</loc>
     <lastmod>2025-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -483,14 +476,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/postmarketOS/</loc>
+    <loc>https://blog.osyb.cn/tags/OpenWrt/</loc>
     <lastmod>2025-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/OpenWrt/</loc>
+    <loc>https://blog.osyb.cn/tags/postmarketOS/</loc>
     <lastmod>2025-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -505,6 +498,13 @@
   
   <url>
     <loc>https://blog.osyb.cn/tags/Linux/</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.osyb.cn/tags/Node-js/</loc>
     <lastmod>2025-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
