@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-08-13T13:07:23.283Z</updated>
+  <updated>2025-08-13T20:20:00.000Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用 ChatGPT 批量生成长尾关键词（提升搜索覆盖面）</title>
+    <link href="https://blog.osyb.cn/posts/wz-29/"/>
+    <id>https://blog.osyb.cn/posts/wz-29/</id>
+    <published>2025-08-13T20:10:00.000Z</published>
+    <updated>2025-08-13T20:20:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>昨天的文章《<a href="/posts/wz-26/">用 ChatGPT 批量生成 SEO 标题和 Meta Description</a>》解决了<strong>如何提升点击率（CTR）</strong>的问题。<br>但想让更多人看到你的文章，第一步还是——<strong>让文章能被搜索到</strong>。</p><p>而在 SEO 中，<strong>长尾关键词</strong>往往比热门词更容易带来精准流量：</p><ul><li>竞争低，更容易排名靠前</li><li>用户搜索意图更明确，转化率更高</li><li>覆盖范围广，流量来源更稳定</li></ul><hr><h2 id="一、为什么要用-ChatGPT-生成长尾关键词"><a href="#一、为什么要用-ChatGPT-生成长尾关键词" class="headerlink" title="一、为什么要用 ChatGPT 生成长尾关键词"></a>一、为什么要用 ChatGPT 生成长尾关键词</h2><p>传统做法：用百度指数、Google Keyword Planner 手动拓展，很慢。<br>ChatGPT 的优势：</p><ul><li><strong>一次生成几十甚至上百个长尾关键词</strong></li><li>自动匹配语义相关的变体词</li><li>根据目标用户习惯优化搜索用语</li></ul><hr><h2 id="二、长尾关键词的应用场景"><a href="#二、长尾关键词的应用场景" class="headerlink" title="二、长尾关键词的应用场景"></a>二、长尾关键词的应用场景</h2><ul><li><strong>写文章选题</strong><br>直接用长尾关键词作为文章标题或主题</li><li><strong>优化已有内容</strong><br>在文章中自然融入更多相关长尾词</li><li><strong>广告投放</strong><br>用精准长尾词减少无效点击</li><li><strong>电商 SEO</strong><br>生成商品标题和描述中的关键词</li></ul><hr><h2 id="三、用-ChatGPT-批量生成长尾关键词的方法"><a href="#三、用-ChatGPT-批量生成长尾关键词的方法" class="headerlink" title="三、用 ChatGPT 批量生成长尾关键词的方法"></a>三、用 ChatGPT 批量生成长尾关键词的方法</h2><h3 id="1-准备核心关键词"><a href="#1-准备核心关键词" class="headerlink" title="1. 准备核心关键词"></a>1. 准备核心关键词</h3><p>假设你的网站主题是网站速度优化，核心关键词可能是：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">网站加速</span><br><span class="line">WordPress 优化</span><br><span class="line">图片压缩</span><br></pre></td></tr></table></figure><h3 id="2-Prompt-模板"><a href="#2-Prompt-模板" class="headerlink" title="2. Prompt 模板"></a>2. Prompt 模板</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">请根据以下核心关键词，生成 30 个长尾关键词：</span><br><span class="line">要求：</span><br><span class="line">1. 每个长尾关键词长度为 4-10 个字</span><br><span class="line">2. 符合中文用户搜索习惯</span><br><span class="line">3. 贴近实际搜索意图</span><br><span class="line">4. 按表格形式输出</span><br><span class="line">核心关键词列表：</span><br><span class="line">[关键词1]</span><br><span class="line">[关键词2]</span><br><span class="line">[关键词3]</span><br></pre></td></tr></table></figure><h3 id="3-示例输出"><a href="#3-示例输出" class="headerlink" title="3. 示例输出"></a>3. 示例输出</h3><table><thead><tr><th>核心关键词</th><th>长尾关键词</th></tr></thead><tbody><tr><td>网站加速</td><td>网站加速插件推荐</td></tr><tr><td>网站加速</td><td>如何提升网站访问速度</td></tr><tr><td>WordPress 优化</td><td>WordPress 速度优化技巧</td></tr><tr><td>WordPress 优化</td><td>WordPress 缓存插件对比</td></tr><tr><td>图片压缩</td><td>在线图片压缩工具推荐</td></tr><tr><td>图片压缩</td><td>如何无损压缩图片体积</td></tr></tbody></table><hr><h2 id="四、批量生成多个主题的长尾关键词"><a href="#四、批量生成多个主题的长尾关键词" class="headerlink" title="四、批量生成多个主题的长尾关键词"></a>四、批量生成多个主题的长尾关键词</h2><p>如果你有多个主题，可以一次性输入多组关键词：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">请为以下每组关键词生成 20 个长尾关键词，并按主题分组：</span><br><span class="line">- SEO 优化</span><br><span class="line">- 网站安全</span><br><span class="line">- 数据备份</span><br></pre></td></tr></table></figure><p>这样 ChatGPT 会自动帮你分组，方便后续整理到 Excel 或 Google Sheets。</p><hr><h2 id="五、进阶玩法：结合搜索数据筛选"><a href="#五、进阶玩法：结合搜索数据筛选" class="headerlink" title="五、进阶玩法：结合搜索数据筛选"></a>五、进阶玩法：结合搜索数据筛选</h2><p>ChatGPT 生成的长尾关键词可以先做一次<strong>初筛</strong>：</p><ol><li>用百度指数或 Google Keyword Planner 查找搜索量和竞争度</li><li>过滤掉搜索量过低或无商业价值的词</li><li>剩下的词进入内容生产环节</li></ol><hr><h2 id="六、实战建议"><a href="#六、实战建议" class="headerlink" title="六、实战建议"></a>六、实战建议</h2><ul><li><strong>每月更新</strong>：搜索趋势会变化，定期用 ChatGPT 批量更新长尾词</li><li><strong>内容矩阵</strong>：一个核心词衍生多个长尾词，每个长尾词写一篇文章</li><li><strong>监控效果</strong>：用 Google Search Console &#x2F; 百度站长工具看关键词带来的点击和排名</li></ul><hr><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>长尾关键词是 SEO 流量的“蓄水池”，也是内容布局的核心。<br>利用 ChatGPT，你可以在几分钟内完成过去几小时才能做完的关键词拓展工作，让网站覆盖更多搜索入口。</p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用。</p></blockquote><hr>]]></content>
+    
+    
+    <summary type="html">本文教你用 ChatGPT 批量生成长尾关键词，拓展搜索覆盖面，提高自然流量获取能力，让 SEO 策略更精准高效。</summary>
+    
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="SEO" scheme="https://blog.osyb.cn/categories/SEO/"/>
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="ChatGPT" scheme="https://blog.osyb.cn/tags/ChatGPT/"/>
+    
+    <category term="SEO" scheme="https://blog.osyb.cn/tags/SEO/"/>
+    
+  </entry>
   
   <entry>
     <title>Navicat Premium 17 破解教程</title>
@@ -504,33 +531,6 @@
     
     
     <category term="活动资讯" scheme="https://blog.osyb.cn/tags/%E6%B4%BB%E5%8A%A8%E8%B5%84%E8%AE%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows 浏览器提示未连接到互联网？可能是代理设置没关掉</title>
-    <link href="https://blog.osyb.cn/posts/wz-9/"/>
-    <id>https://blog.osyb.cn/posts/wz-9/</id>
-    <published>2025-07-14T07:08:22.588Z</published>
-    <updated>2025-07-26T10:12:51.246Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在使用网络加速器或机场服务（如 Clash、V2Ray、Trojan 等）之后，很多用户在<strong>重启电脑后首次打开浏览器时</strong>，会遇到以下提示：</p><blockquote><p><strong>“未连接到互联网，代理服务器出现问题，或者地址有误。”</strong><br><strong>“你尚未连接，代理服务器可能有问题，或地址不正确。”</strong></p></blockquote><p>这个问题多数情况下是因为<strong>系统代理设置没有恢复为默认状态</strong>，导致浏览器或其他程序仍然尝试通过已经关闭的代理服务器连接网络，最终连接失败。</p><p><img src="https://cdn.osyb.cn/img/2025/07/bec26f1992c236a32a7d06914dacb3a3.png/blog" alt="Windows 浏览器提示未连接到互联网 ERR_PROXY_CONNECTION_FAILED 示例"></p><hr><h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><h3 id="浏览器错误提示（可能是以下几种）："><a href="#浏览器错误提示（可能是以下几种）：" class="headerlink" title="浏览器错误提示（可能是以下几种）："></a>浏览器错误提示（可能是以下几种）：</h3><ul><li>无法访问此网站</li><li>请检查您的互联网连接</li><li>代理服务器出现问题，或者地址有误</li><li>ERR_PROXY_CONNECTION_FAILED</li></ul><p>这些报错大多数都与系统中的<strong>HTTP&#x2F;HTTPS代理配置</strong>残留有关。</p><hr><h2 id="可能原因"><a href="#可能原因" class="headerlink" title="可能原因"></a>可能原因</h2><ol><li><strong>加速器未正常关闭代理设置</strong><br>一些加速器&#x2F;机场客户端关闭后不会自动清除或还原系统代理设置。</li><li><strong>开机启动项设置残留</strong><br>加速器设置了系统代理，但并未随系统启动，导致代理地址无效。</li><li><strong>断电或系统崩溃后配置未恢复</strong><br>突然关机或程序异常退出，系统代理配置未能被及时重置。</li></ol><hr><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="方法一：手动关闭系统代理"><a href="#方法一：手动关闭系统代理" class="headerlink" title="方法一：手动关闭系统代理"></a>方法一：手动关闭系统代理</h3><ol><li><p><strong>打开系统设置</strong><br>点击开始菜单 → 设置（Settings）</p></li><li><p><strong>进入网络设置</strong><br>依次点击：<br><code>网络和 Internet</code> → <code>代理</code></p></li><li><p><strong>关闭代理服务器</strong><br>在<strong>手动代理设置</strong>中，将“<strong>使用代理服务器</strong>”的开关关闭。</p><p><img src="https://cdn.osyb.cn/img/2025/07/6bb313c97705e5d4d07cf22610339095.png/blog" alt="Windows 10 系统手动关闭代理服务器设置截图"></p></li><li><p>关闭设置页面，重新打开浏览器测试是否恢复正常。</p></li></ol><hr><h3 id="方法二：使用命令行重置代理配置"><a href="#方法二：使用命令行重置代理配置" class="headerlink" title="方法二：使用命令行重置代理配置"></a>方法二：使用命令行重置代理配置</h3><p>如果你希望更快速地通过命令行解决，可以按下 <code>Win + R</code> 打开运行框，输入 <code>cmd</code>，以管理员身份运行命令提示符，执行以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></table></figure><p><img src="https://cdn.osyb.cn/img/2025/07/3dd6dfeb8f218a21f22c22c07a554188.png/blog" alt="CMD 命令行使用 netsh winhttp reset proxy 重置 WinHTTP 代理"></p><p>此命令会重置 <code>WinHTTP</code> 代理配置（不是浏览器代理，但部分系统级别应用依赖）。</p><hr><h3 id="方法三：使用-PowerShell-清除代理设置"><a href="#方法三：使用-PowerShell-清除代理设置" class="headerlink" title="方法三：使用 PowerShell 清除代理设置"></a>方法三：使用 PowerShell 清除代理设置</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ItemProperty</span> <span class="literal">-Path</span> <span class="string">&#x27;HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings&#x27;</span> <span class="literal">-Name</span> ProxyEnable <span class="literal">-Value</span> <span class="number">0</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.osyb.cn/img/2025/07/2f089a6ead497b27a19067acea8f26ce.png/blog" alt="PowerShell 清除 Windows 系统代理设置示例"></p><hr><h2 id="如何避免此问题再次发生？"><a href="#如何避免此问题再次发生？" class="headerlink" title="如何避免此问题再次发生？"></a>如何避免此问题再次发生？</h2><ol><li><strong>使用自带代理还原功能的加速器</strong><br>优先选择能自动恢复代理设置的客户端，例如 Clash for Windows、V2RayN 等的“退出时关闭代理”选项。</li><li><strong>不要直接结束进程</strong><br>避免在任务管理器中直接结束加速器进程，否则可能留下代理设置。</li><li><strong>定期检查代理设置</strong><br>特别是在网络连接异常时，第一时间检查 <code>设置 → 网络和 Internet → 代理</code>。</li><li><strong>设置启动脚本自动还原</strong>（进阶用户可选）<br>使用批处理脚本或 PowerShell 每次开机自动重置系统代理设置。</li></ol><hr><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>使用加速器的同时，注意代理配置的管理可以避免很多不必要的网络连接问题。如果你经常遇到这种问题，不妨将这篇文章收藏起来，作为应急解决方案参考。</p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用。</p></blockquote><hr>]]></content>
-    
-    
-    <summary type="html">使用 Clash、V2Ray、Trojan 等网络加速器后，浏览器提示“代理服务器出现问题”？本文详解 ERR_PROXY_CONNECTION_FAILED 报错原因，并提供 3 种方法手动或命令行清除系统代理设置，帮助你恢复正常上网。</summary>
-    
-    
-    
-    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="记录" scheme="https://blog.osyb.cn/categories/%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="Windows" scheme="https://blog.osyb.cn/categories/Windows/"/>
-    
-    
-    <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="Windows" scheme="https://blog.osyb.cn/tags/Windows/"/>
     
   </entry>
   

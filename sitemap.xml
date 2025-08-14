@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/about/</loc>
+    
+    <lastmod>2025-08-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/categories/</loc>
     
     <lastmod>2025-08-14</lastmod>
@@ -20,9 +29,9 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/about/</loc>
+    <loc>https://blog.osyb.cn/posts/wz-29/</loc>
     
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -583,14 +592,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://blog.osyb.cn/categories/Windows/</loc>
     <lastmod>2025-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/Windows/</loc>
+    <loc>https://blog.osyb.cn/categories/%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2025-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
