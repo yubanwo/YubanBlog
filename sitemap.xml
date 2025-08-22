@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/</loc>
+    <loc>https://blog.osyb.cn/about/</loc>
     
     <lastmod>2025-08-22</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/about/</loc>
+    <loc>https://blog.osyb.cn/categories/</loc>
     
     <lastmod>2025-08-22</lastmod>
     
@@ -546,14 +546,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/postmarketOS/</loc>
+    <loc>https://blog.osyb.cn/tags/IntelliJ-IDEA/</loc>
     <lastmod>2025-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/tags/IntelliJ-IDEA/</loc>
+    <loc>https://blog.osyb.cn/tags/postmarketOS/</loc>
     <lastmod>2025-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
