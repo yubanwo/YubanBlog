@@ -499,6 +499,13 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/tags/GitHub/</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/tags/VS-Code/</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -507,13 +514,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/tags/%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/tags/GitHub/</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
