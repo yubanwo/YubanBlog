@@ -6,7 +6,7 @@
   <link href="https://blog.osyb.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.osyb.cn/"/>
-  <updated>2025-08-22T18:05:00.000Z</updated>
+  <updated>2025-08-23T18:05:00.000Z</updated>
   <id>https://blog.osyb.cn/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Office Tool Plus：最佳 Microsoft Office 部署与激活工具（安装教程）</title>
+    <link href="https://blog.osyb.cn/posts/wz-36/"/>
+    <id>https://blog.osyb.cn/posts/wz-36/</id>
+    <published>2025-08-23T18:00:00.000Z</published>
+    <updated>2025-08-23T18:05:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言：为什么选择-Office-Tool-Plus？"><a href="#前言：为什么选择-Office-Tool-Plus？" class="headerlink" title="前言：为什么选择 Office Tool Plus？"></a>前言：为什么选择 Office Tool Plus？</h2><p><a href="https://otp.landian.vip/">Office Tool Plus</a> 是一款基于 <a href="https://docs.microsoft.com/zh-cn/deployoffice/overview-office-deployment-tool">Office Deployment Tool</a> 的图形化工具。<br>它可以帮助用户快速 <strong>下载、安装、配置和激活 Microsoft Office</strong>，相比传统命令行方式更加直观和高效。  </p><ul><li>支持 <strong>Microsoft 365、Office 2021、Office 2019</strong> 等多个版本  </li><li>提供可视化部署界面，适合 <strong>个人用户和企业 IT 管理员</strong>  </li><li>内置 <strong>KMS 激活与许可证管理工具</strong>  </li><li>支持多语言环境（简体中文、繁体中文、英语、日语等）</li></ul><p><img src="https://cdn.osyb.cn/img/2025/08/354a8b180606bf871f5303c2a4167e05.png/blog" alt="Office Tool Plus 界面展示"></p><hr><h2 id="一、Office-Tool-Plus-功能亮点"><a href="#一、Office-Tool-Plus-功能亮点" class="headerlink" title="一、Office Tool Plus 功能亮点"></a>一、Office Tool Plus 功能亮点</h2><ul><li><strong>Office 安装与部署</strong>：自由选择 Office 版本、组件和语言，支持批量安装。  </li><li><strong>更新与卸载</strong>：可配置 Office 更新通道，并支持卸载或修复。  </li><li><strong>激活管理</strong>：支持正版密钥激活、KMS 激活与许可证管理。  </li><li><strong>配置文件导入导出</strong>：通过 XML 配置文件快速批量部署。  </li><li><strong>语言包与字体管理</strong>：灵活添加或删除语言包、校对工具和字体。  </li><li><strong>账户与许可证信息</strong>：查看绑定账号与许可证状态。  </li><li><strong>工具箱</strong>：提供 Office 清理、修复、诊断、日志收集等功能。  </li><li><strong>多语言支持</strong>：适合不同国家和地区的用户使用。</li></ul><hr><h2 id="二、Office-Tool-Plus-安装与部署方法"><a href="#二、Office-Tool-Plus-安装与部署方法" class="headerlink" title="二、Office Tool Plus 安装与部署方法"></a>二、Office Tool Plus 安装与部署方法</h2><h3 id="1-下载-Office-Tool-Plus"><a href="#1-下载-Office-Tool-Plus" class="headerlink" title="1. 下载 Office Tool Plus"></a>1. 下载 Office Tool Plus</h3><p>用户可以通过以下方式下载最新版本：  </p><ul><li>官网下载：<a href="https://otp.landian.vip/zh-cn/">https://otp.landian.vip/zh-cn/</a>  </li><li>GitHub Release：<a href="https://github.com/YerongAI/Office-Tool">https://github.com/YerongAI/Office-Tool</a></li></ul><p>解压后即可使用，无需安装，非常便捷。  </p><hr><h3 id="2-使用-OTP-快速安装-Office"><a href="#2-使用-OTP-快速安装-Office" class="headerlink" title="2. 使用 OTP 快速安装 Office"></a>2. 使用 OTP 快速安装 Office</h3><ol><li>打开 <strong>Office Tool Plus</strong>，进入 <strong>部署</strong> 页面。  </li><li>选择需要的 <strong>Office 版本</strong>（如 Microsoft 365、Office 2021）。  </li><li>勾选需要的组件（Word、Excel、PowerPoint、Outlook 等）。  </li><li>点击 <strong>开始部署</strong>，自动下载安装。</li></ol><p>这种方式比微软官网下载 ISO 文件更省时，更灵活。  </p><hr><h3 id="3-Office-激活方式"><a href="#3-Office-激活方式" class="headerlink" title="3. Office 激活方式"></a>3. Office 激活方式</h3><p>Office Tool Plus 内置多种激活方案：  </p><ul><li><strong>密钥激活</strong>：输入正版密钥激活。  </li><li><strong>KMS 激活</strong>：支持 KMS 服务器激活。  </li><li><strong>许可证管理</strong>：可查看、安装或删除 Office 许可证。</li></ul><hr><h3 id="4-常用管理功能"><a href="#4-常用管理功能" class="headerlink" title="4. 常用管理功能"></a>4. 常用管理功能</h3><ul><li><strong>更新管理</strong>：切换不同更新通道（当前频道、预览频道、批量许可频道）。  </li><li><strong>语言管理</strong>：安装或卸载 Office 语言包。  </li><li><strong>修复工具</strong>：一键修复 Office 错误，清理残留文件。</li></ul><hr><h2 id="三、适用场景"><a href="#三、适用场景" class="headerlink" title="三、适用场景"></a>三、适用场景</h2><ul><li><strong>个人用户</strong>：快速安装和激活 Office，节省时间。  </li><li><strong>企业 IT 管理员</strong>：批量部署，集中管理 Office 许可证。  </li><li><strong>教育机构</strong>：灵活安装多语言版本，适配不同用户需求。  </li><li><strong>测试人员</strong>：快速切换不同 Office 版本与通道进行测试。</li></ul><hr><h2 id="四、Office-Tool-Plus-项目地址"><a href="#四、Office-Tool-Plus-项目地址" class="headerlink" title="四、Office Tool Plus 项目地址"></a>四、Office Tool Plus 项目地址</h2><ul><li><strong>官方网站</strong>：<a href="https://otp.landian.vip/">https://otp.landian.vip/</a>  </li><li><strong>GitHub 仓库</strong>：<a href="https://github.com/YerongAI/Office-Tool">https://github.com/YerongAI/Office-Tool</a></li></ul><hr><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>无论是个人、企业还是教育机构，<strong>Office Tool Plus 都是最值得推荐的 Office 部署与激活工具</strong>。<br>它功能全面、操作简单，能显著提升 Office 的安装与管理效率。  </p><p>👉 如果你正在寻找一款 <strong>免费、安全、高效的 Office 部署工具</strong>，Office Tool Plus 一定能满足你的需求。  </p><p>小广告：<strong>渝伴优卡</strong> —— 大流量、低资费，四大运营商官方授权流量卡！ <a href="/youka/">点击领取</a></p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供学习与技术研究使用，不得用于非法用途。</p></blockquote><hr>]]></content>
+    
+    
+    <summary type="html">Office Tool Plus 是一款强大的 Microsoft Office 部署与激活工具，支持快速安装、批量部署、更新管理、KMS 激活与许可证管理，适合个人和企业用户高效使用 Office。</summary>
+    
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="开源项目" scheme="https://blog.osyb.cn/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="办公软件" scheme="https://blog.osyb.cn/categories/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="开源项目" scheme="https://blog.osyb.cn/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="Office" scheme="https://blog.osyb.cn/tags/Office/"/>
+    
+    <category term="部署" scheme="https://blog.osyb.cn/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>DPanel：轻量化的 Docker/Podman 可视化管理面板</title>
@@ -516,29 +547,6 @@
     <category term="Hexo" scheme="https://blog.osyb.cn/tags/Hexo/"/>
     
     <category term="教程" scheme="https://blog.osyb.cn/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 EdgeOne 免费 CDN 加速 Hexo 博客的实测体验</title>
-    <link href="https://blog.osyb.cn/posts/wz-16/"/>
-    <id>https://blog.osyb.cn/posts/wz-16/</id>
-    <published>2025-07-24T08:42:28.349Z</published>
-    <updated>2025-07-28T01:34:09.190Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我的博客之前一直是“裸奔”状态——国内国外各只有一个节点，访问速度时快时慢，安全防护几乎为零。<br>一次在交流群看到朋友提到 <strong>EdgeOne 免费 CDN 套餐</strong>，支持国内加速，还能免费用，于是立刻去了解。</p><hr><h2 id="如何获取-EdgeOne-免费套餐"><a href="#如何获取-EdgeOne-免费套餐" class="headerlink" title="如何获取 EdgeOne 免费套餐"></a>如何获取 EdgeOne 免费套餐</h2><p>EdgeOne 免费套餐需要<strong>兑换码</strong>，可通过以下方式获取：</p><ol><li>在 X（推特）分享相关内容；</li><li>加入官方 Discord 社区参与活动；</li><li>参加 GitHub 开发者合作计划。</li></ol><p><img src="https://cdn.osyb.cn/img/2025/07/0f0eec8e1c8365c4f9eebce1b72cbc50.png/blog" alt="EdgeOne 兑换方式图示"></p><p>我加入 Discord 社区时，正好赶上兑换码发放活动，手速一快就抢到了！<br>因为我的域名已备案，而且有国内加速需求，就直接前往<a href="https://cloud.tencent.com/act/cps/redirect?redirect=37472&cps_key=90c2058195d5c9d09f2e966dbe776eff">腾讯云中国站</a>绑定兑换码并开通套餐，整个过程不到 10 分钟。</p><p>目前 EdgeOne 还有个 <strong><a href="https://edgeone.ai/zh/get-free-plan">测速赢免费套餐</a></strong> 活动，新用户只需跑一次测速即可申请，非常方便。</p><p><img src="https://cdn.osyb.cn/img/2025/07/708b60aef619c57a057e1176f993d461.png/blog" alt="测速赢免费套餐活动页"></p><hr><h2 id="接入方式：CNAME-接入更省心"><a href="#接入方式：CNAME-接入更省心" class="headerlink" title="接入方式：CNAME 接入更省心"></a>接入方式：CNAME 接入更省心</h2><p>我选择了 <strong>CNAME 接入</strong>（无需更换 NS）：</p><ul><li>配置简单，风险低，兼容性好；</li><li>源站和代理规则配置完毕后，几分钟内生效；</li><li>保留原 DNS 提供商，方便随时切换。</li></ul><hr><h2 id="Ping-测速对比：延迟显著下降"><a href="#Ping-测速对比：延迟显著下降" class="headerlink" title="Ping 测速对比：延迟显著下降"></a>Ping 测速对比：延迟显著下降</h2><p>测速工具：<a href="https://boce.aliyun.com/detect/ping">阿里云网站运维检测平台</a></p><p><strong>接入 EdgeOne 后：</strong></p><p><img src="https://cdn.osyb.cn/img/2025/07/fe6f6b8c87d75b67c6eda39bbce3e7e8.png/blog" alt="使用 CDN 后 Ping 结果"></p><p><strong>接入前：</strong></p><p><img src="https://cdn.osyb.cn/img/2025/07/f656fe01b79b85b5d1ede12dcac7819d.png/blog" alt="使用 CDN 前 Ping 结果"></p><p><strong>对比图：</strong></p><p><img src="https://cdn.osyb.cn/img/2025/07/bdfc069559aac4ece826b9805cd47dac.png/blog" alt="Ping 前后对比合图"></p><p>结果很直观：接入前，海外节点延迟高得离谱；接入后，全球平均延迟稳定在 <strong>76ms 左右</strong>。</p><hr><h2 id="HTTP-测速对比：网页加载速度大幅提升"><a href="#HTTP-测速对比：网页加载速度大幅提升" class="headerlink" title="HTTP 测速对比：网页加载速度大幅提升"></a>HTTP 测速对比：网页加载速度大幅提升</h2><p>为了更全面验证，我还做了 HTTP 页面加载测速。</p><p><strong>加速后：</strong></p><p><img src="https://cdn.osyb.cn/img/2025/07/0e3299d800333d65ac15bac87b318ac1.png/blog" alt="HTTP 加速后"></p><p><strong>加速前：</strong></p><p><img src="https://cdn.osyb.cn/img/2025/07/5234fa79833ea6659f02b93dc3ab1acd.png/blog" alt="HTTP 加速前"></p><p><strong>对比图：</strong></p><p><img src="https://cdn.osyb.cn/img/2025/07/0c4286f403bf8e2712aed6bf59079f1e.png/blog" alt="HTTP 前后对比合图"></p><p>无论国内还是海外节点，加载速度均大幅缩短，访问体验提升明显。</p><hr><h2 id="使用体验总结"><a href="#使用体验总结" class="headerlink" title="使用体验总结"></a>使用体验总结</h2><p>我的博客基于 Hexo 构建，页面本就轻量。加上 EdgeOne 免费 CDN 后，提升更加明显：</p><ul><li><strong>速度快</strong>：页面加载速度提升，尤其海外访问体验明显优化；</li><li><strong>更安全</strong>：支持 WAF、防 DDoS、防盗链等安全功能；</li><li><strong>可视化数据</strong>：提供访问日志、状态码统计，方便分析；</li><li><strong>成本低</strong>：免费套餐足够个人博客使用。</li></ul><p><strong>适用场景</strong>：备案域名、国内访问需求高、静态博客&#x2F;站点类网站。<br>如果你和我一样想提速网站，不妨试试 EdgeOne 免费套餐。</p><hr><blockquote><p>⚠️ <strong>免责声明</strong>：本文仅供个人学习与技术研究使用，不构成商业推广。</p></blockquote><hr>]]></content>
-    
-    
-    <summary type="html">站长实测 EdgeOne 免费 CDN 套餐，国内外访问速度显著提升。详细介绍申请方式、接入步骤、测速对比和使用体验，适合 Hexo 静态博客优化参考。</summary>
-    
-    
-    
-    <category term="建站笔记" scheme="https://blog.osyb.cn/categories/%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Hexo" scheme="https://blog.osyb.cn/tags/Hexo/"/>
-    
-    <category term="CDN" scheme="https://blog.osyb.cn/tags/CDN/"/>
     
   </entry>
   
