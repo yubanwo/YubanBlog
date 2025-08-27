@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/about/</loc>
+    <loc>https://blog.osyb.cn/categories/</loc>
     
     <lastmod>2025-08-27</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/</loc>
+    <loc>https://blog.osyb.cn/about/</loc>
     
     <lastmod>2025-08-27</lastmod>
     
@@ -450,6 +450,13 @@
   </url>
   
   <url>
+    <loc>https://blog.osyb.cn/tags/CDN/</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.osyb.cn/tags/Docker/</loc>
     <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -458,13 +465,6 @@
   
   <url>
     <loc>https://blog.osyb.cn/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2025-08-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.osyb.cn/tags/CDN/</loc>
     <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -641,14 +641,14 @@
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/Docker/</loc>
+    <loc>https://blog.osyb.cn/categories/%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.osyb.cn/categories/%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://blog.osyb.cn/categories/Docker/</loc>
     <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
